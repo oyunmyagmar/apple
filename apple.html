@@ -16,13 +16,15 @@
         background-color: rgba(245, 245, 247, 0.8);
       }
       header > div {
-        width: 979px;
-        height: 44px;
+        width: 879px;
         margin: 0 auto;
         display: flex;
-        gap: 24px;
+        justify-content: space-between;
         align-items: center;
-        box-sizing: border-boxs;
+      }
+      nav {
+        display: flex;
+        gap: 24px;
       }
       nav a {
         font-size: 12px;
@@ -30,14 +32,13 @@
         color: rgba(0, 0, 0, 1);
         text-decoration: none;
         letter-spacing: -0.28px;
-        margin-right: 24px;
       }
-      button {
+      header button {
         background-color: transparent;
         border: none;
-        width: 31px;
+        width: 30px;
         height: 44px;
-        background-size: covers;
+        background-size: contain;
       }
       header button {
         background-image: url(image/search.png);
@@ -64,7 +65,6 @@
       .section4 {
         height: 692px;
         margin: 0 auto;
-        background-image: url(image/sec2.png);
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 12px;
@@ -84,43 +84,68 @@
         line-height: 60px;
         font-weight: 600;
         letter-spacing: -0.28px;
+      }
+      .section2-text div:nth-child(1),
+      .section3-text div:nth-child(1) {
         color: rgba(245, 245, 247, 1);
       }
+
       .section2-text div:nth-child(2),
-      .section3-text div:nth-child(2),
-      .section4-text div:nth-child(2) {
+      .section3-text div:nth-child(2) {
         font-size: 24px;
         line-height: 32px;
         color: rgba(245, 245, 247, 1);
         margin-top: 16px;
         margin-bottom: 20px;
       }
-      .button-box button:nth-child(1) {
+      .section2 .button-box button:nth-child(1),
+      .section3 .button-box button:nth-child(1) {
         width: 123px;
         height: 44px;
-        background-color: rgba(0, 113, 227, 1);
+        padding: 12px 20px;
+        border: none;
         border-radius: 22px;
         font-size: 16px;
         line-height: 20px;
         letter-spacing: -0.37px;
-        color: rgba(255, 255, 255, 1);
         margin-right: 16px;
+        box-sizing: border-box;
       }
-      .button-box button:nth-child(2) {
+      .section2 .button-box button:nth-child(1) {
+        background-color: rgba(0, 113, 227, 1);
+        color: rgba(255, 255, 255, 1);
+      }
+      .section2 .button-box button:nth-child(2),
+      .section3 .button-box button:nth-child(2) {
         width: 68px;
         height: 44px;
+        padding: 12px 20px;
         background-color: transparent;
-        border: 1px solid rgba(41, 151, 255, 1);
         border-radius: 22px;
         font-size: 16px;
         line-height: 20px;
         letter-spacing: -0.37px;
+        box-sizing: border-box;
+      }
+      .section2 .button-box button:nth-child(2) {
+        border: 1px solid rgba(41, 151, 255, 1);
         color: rgba(41, 151, 255, 1);
       }
+
       /* section3 start */
       .section3 {
         background-image: url(image/sec3.png);
       }
+      .section3 .button-box button:nth-child(1) {
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
+      }
+      .section3 .button-box button:nth-child(2) {
+        border: 1px solid rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1);
+      }
+
       /* section4 start */
       .section4 {
         background-image: url(image/sec4.png);
@@ -133,9 +158,31 @@
         color: rgba(0, 0, 0, 1);
       }
       .section4-text div:nth-child(2) {
+        font-size: 24px;
+        line-height: 32px;
         color: rgba(0, 0, 0, 1);
         margin-top: 12px;
         margin-bottom: 16px;
+      }
+      .section4 button {
+        width: 114px;
+        height: 44px;
+        padding: 12px 20px;
+        background-color: rgba(0, 113, 227, 1);
+        border-radius: 22px;
+        border: none;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.37px;
+        color: rgba(255, 255, 255, 1);
+      }
+
+      /* section5 start */
+      .section5 > div {
+      }
+      .lin6box {
+        width: 942px;
+        height: 580px;
       }
     </style>
   </head>
@@ -191,19 +238,31 @@
         <div class="section3-text">
           <div>iPhone 16</div>
           <div>Hello, Apple Intelligence.</div>
-          <div>
+          <div class="button-box">
             <button>Learn more</button>
             <button>Buy</button>
           </div>
         </div>
       </section>
 
-      <!-- section4 star -->
+      <!-- section4 start -->
       <section class="section4">
         <div class="section4-text">
           <div>Gift magic.</div>
           <div>Make their holiday wish come true.</div>
           <button>Shop gifts</button>
+        </div>
+      </section>
+
+      <!-- section5 start -->
+      <section class="section5">
+        <div>
+          <div class="lin6box"></div>
+          <div class="lin6box"></div>
+          <div class="lin6box"></div>
+          <div class="lin6box"></div>
+          <div class="lin6box"></div>
+          <div class="lin6box"></div>
         </div>
       </section>
     </main>
