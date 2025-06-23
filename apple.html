@@ -11,7 +11,7 @@
     />
 
     <style>
-      /* header start */
+      /* header */
       header {
         background-color: rgba(245, 245, 247, 0.8);
       }
@@ -41,13 +41,13 @@
         background-size: contain;
       }
       header button {
-        background-image: url(image/search.png);
+        background-image: url(image/h-search.png);
       }
       header button + button {
-        background-image: url(image/shoppingbag.png);
+        background-image: url(image/h-shopbag.png);
       }
 
-      /* section1 start */
+      /* section1 */
       .section1 {
         background-color: rgba(255, 255, 255, 1);
       }
@@ -59,38 +59,81 @@
         color: rgba(29, 29, 31, 1);
       }
 
-      /* section2 start */
-      .section2,
-      .section3,
-      .section4 {
+      /* section2 */
+      .section2 {
         height: 692px;
         margin: 0 auto;
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 12px;
-      }
-      .section2 {
         background-image: url(image/sec2.png);
       }
-      .section2-text,
-      .section3-text {
+      .section2-text {
         text-align: center;
         padding-top: 55px;
       }
-      .section2-text div:nth-child(1),
-      .section3-text div:nth-child(1),
-      .section4-text div:nth-child(1) {
+      .section2-text div:nth-child(1) {
         font-size: 52px;
         line-height: 60px;
         font-weight: 600;
         letter-spacing: -0.28px;
-      }
-      .section2-text div:nth-child(1),
-      .section3-text div:nth-child(1) {
         color: rgba(245, 245, 247, 1);
       }
+      .section2-text div:nth-child(2) {
+        font-size: 24px;
+        line-height: 32px;
+        color: rgba(245, 245, 247, 1);
+        margin-top: 16px;
+        margin-bottom: 20px;
+      }
+      .section2 .button-box button:nth-child(1) {
+        width: 123px;
+        height: 44px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 22px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.37px;
+        margin-right: 16px;
+        box-sizing: border-box;
+        background-color: rgba(0, 113, 227, 1);
+        color: rgba(255, 255, 255, 1);
+      }
+      .section2 .button-box button:nth-child(2) {
+        width: 68px;
+        height: 44px;
+        padding: 12px 20px;
+        background-color: transparent;
+        border-radius: 22px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.37px;
+        box-sizing: border-box;
+        border: 1px solid rgba(41, 151, 255, 1);
+        color: rgba(41, 151, 255, 1);
+      }
 
-      .section2-text div:nth-child(2),
+      /* section3 */
+      .section3 {
+        height: 692px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 12px;
+        background-image: url(image/sec3.png);
+      }
+      .section3-text {
+        text-align: center;
+        padding-top: 55px;
+      }
+      .section3-text div:nth-child(1) {
+        font-size: 52px;
+        line-height: 60px;
+        font-weight: 600;
+        letter-spacing: -0.28px;
+        color: rgba(245, 245, 247, 1);
+      }
       .section3-text div:nth-child(2) {
         font-size: 24px;
         line-height: 32px;
@@ -98,7 +141,6 @@
         margin-top: 16px;
         margin-bottom: 20px;
       }
-      .section2 .button-box button:nth-child(1),
       .section3 .button-box button:nth-child(1) {
         width: 123px;
         height: 44px;
@@ -110,12 +152,10 @@
         letter-spacing: -0.37px;
         margin-right: 16px;
         box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
       }
-      .section2 .button-box button:nth-child(1) {
-        background-color: rgba(0, 113, 227, 1);
-        color: rgba(255, 255, 255, 1);
-      }
-      .section2 .button-box button:nth-child(2),
       .section3 .button-box button:nth-child(2) {
         width: 68px;
         height: 44px;
@@ -126,28 +166,17 @@
         line-height: 20px;
         letter-spacing: -0.37px;
         box-sizing: border-box;
-      }
-      .section2 .button-box button:nth-child(2) {
-        border: 1px solid rgba(41, 151, 255, 1);
-        color: rgba(41, 151, 255, 1);
-      }
-
-      /* section3 start */
-      .section3 {
-        background-image: url(image/sec3.png);
-      }
-      .section3 .button-box button:nth-child(1) {
-        background-color: rgba(255, 255, 255, 1);
-        border: 1px solid rgba(255, 255, 255, 1);
-        color: rgba(0, 0, 0, 1);
-      }
-      .section3 .button-box button:nth-child(2) {
         border: 1px solid rgba(255, 255, 255, 1);
         color: rgba(255, 255, 255, 1);
       }
 
-      /* section4 start */
+      /* section4 */
       .section4 {
+        height: 692px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 12px;
         background-image: url(image/sec4.png);
       }
       .section4-text {
@@ -155,6 +184,10 @@
         padding-top: 446px;
       }
       .section4-text div:nth-child(1) {
+        font-size: 52px;
+        line-height: 60px;
+        font-weight: 600;
+        letter-spacing: -0.28px;
         color: rgba(0, 0, 0, 1);
       }
       .section4-text div:nth-child(2) {
@@ -177,23 +210,67 @@
         color: rgba(255, 255, 255, 1);
       }
 
-      /* section5 start */
+      /* section5 */
       .section5 > div {
+        width: 1920px;
+        height: 1764px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 12px;
+        column-gap: 12px;
+        justify-content: center;
+        align-items: center;
       }
-      .lin6box {
+      .s5-item {
         width: 942px;
         height: 580px;
+        text-align: center;
+      }
+      .s5-item:nth-child(1) {
+        background-image: url(image/s5.1-ipad.png);
+      }
+      .s5-item:nth-child(2) {
+        background-image: url(image/s5.2-airpod.png);
+      }
+      .s5-item:nth-child(3) {
+        background-image: url(image/s5.3-watch.png);
+      }
+      .s5-item:nth-child(4) {
+        background-image: url(image/s5.4-macair.png);
+      }
+      .s5-item:nth-child(5) {
+        background-image: url(image/s5.5-tradein.png);
+      }
+      .s5-item:nth-child(6) {
+        background-image: url(image/s5.6-card.png);
+      }
+      .ipadair {
+        margin-top: 58px;
+      }
+      .ipadair > div:nth-child(2) {
+        font-size: 18px;
+        line-height: 25px;
+        color: rgba(29, 29, 31, 1);
+        margin-top: 9px;
+        margin-bottom: 20px;
+      }
+      .ipadair button:nth-child(1) {
+        width: 115px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: rgba(0, 113, 227, 1);
       }
     </style>
   </head>
 
   <body style="margin: 0; font-family: 'Inter'">
     <main>
-      <!-- header start -->
+      <!-- header  -->
       <header>
         <div>
           <a href="https://www.apple.com/">
-            <img src="image/apple-logo.png" />
+            <img src="image/h-apple-logo.png" />
           </a>
           <nav>
             <a href="https://www.apple.com/">Store</a>
@@ -213,7 +290,7 @@
         </div>
       </header>
 
-      <!-- section1 start -->
+      <!-- section1 -->
       <section class="section1">
         <div>
           We’re donating $5 to the Global Fund for every purchase made with
@@ -221,7 +298,7 @@
         </div>
       </section>
 
-      <!-- section2 start -->
+      <!-- section2 -->
       <section class="section2">
         <div class="section2-text">
           <div>iPhone 16 Pro</div>
@@ -233,7 +310,7 @@
         </div>
       </section>
 
-      <!-- section3 start -->
+      <!-- section3 -->
       <section class="section3">
         <div class="section3-text">
           <div>iPhone 16</div>
@@ -245,7 +322,7 @@
         </div>
       </section>
 
-      <!-- section4 start -->
+      <!-- section4 -->
       <section class="section4">
         <div class="section4-text">
           <div>Gift magic.</div>
@@ -254,15 +331,110 @@
         </div>
       </section>
 
-      <!-- section5 start -->
+      <!-- section5 -->
       <section class="section5">
         <div>
-          <div class="lin6box"></div>
-          <div class="lin6box"></div>
-          <div class="lin6box"></div>
-          <div class="lin6box"></div>
-          <div class="lin6box"></div>
-          <div class="lin6box"></div>
+          <div class="s5-item">
+            <div class="sec5-text ipadair">
+              <div>
+                <img src="image/ipadair.png" />
+              </div>
+              <div>Two sizes. Faster chip. Does it all.</div>
+              <div>
+                <button>Learn more</button>
+                <button>Buy</button>
+              </div>
+              <div>Hello, Apple Intelligence.</div>
+            </div>
+          </div>
+          <div class="s5-item">
+            <div class="sec5-text airpodspro2">
+              <div>AirPods Pro 2</div>
+              <div>Now with a Hearing Aid feature.2</div>
+              <div>
+                <button>Learn more</button>
+                <button>Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="s5-item">
+            <div class="sec5-text watch">
+              <div>
+                <div>
+                  <img />
+                  <div>WATCH</div>
+                </div>
+                <div>SERIES 10</div>
+              </div>
+              <div>Thinstant classic.</div>
+              <div>
+                <button>Learn more</button>
+                <button>Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="s5-item">
+            <div class="sec5-text macbookair">
+              <div>MacBook Air</div>
+              <div>Lean. Mean. M3 machine.</div>
+              <div>
+                <button>Learn more</button>
+                <button>Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="s5-item">
+            <div class="sec5-text tradein">
+              <div>
+                <img />
+                <div>Trade In</div>
+              </div>
+              <div>
+                Get $180–$650 in credit when you trade in iPhone 12 or higher.3
+              </div>
+              <div>
+                <button>Get your estimate</button>
+              </div>
+            </div>
+          </div>
+          <div class="s5-item">
+            <div class="sec5-text card">
+              <div>
+                <div></div>
+                <div>Card</div>
+              </div>
+              <div>Get up to 3% Daily Cash back with every purchase.</div>
+              <div>
+                <button>Learn more</button>
+                <button>Apply now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section6 scroll -->
+      <section class="section6">
+        <div class="srcoll-container">
+          <a>
+            <img />
+          </a>
+          <a>
+            <img />
+          </a>
+          <a>
+            <img />
+          </a>
+        </div>
+      </section>
+
+      <!-- section7 -->
+      <section>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </section>
     </main>
