@@ -1,10 +1,83 @@
-
-.after-header {
-    background-color: rgba(255, 255, 255, 1);
-    width: 100%;
+body {
+  margin: 0;
 }
-.after-header text {
-    font-size: 14px;
-    line-height:  20px; 
-   color: rgba(29, 29, 31, 1);
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 12px;
+}
+.products-item {
+  height: 580px;
+  width: calc(50% - 6px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.products-item:nth-child(1) {
+  background-image: url(image/pro.ipadair.png);
+}
+.products-item:nth-child(2) {
+  background-image: url(image/pro.airpods.png);
+}
+.products-item:nth-child(3) {
+  background-image: url(image/pro.watch.png);
+}
+.products-item:nth-child(4) {
+  background-image: url(image/pro.macbookair.png);
+}
+.products-item:nth-child(5) {
+  background-image: url(image/pro.smallbusiness.png);
+  display: none;
+}
+.products-item:nth-child(6) {
+  background-image: url(image/pro.carrierdeals.png);
+  display: none;
+}
+.products-item:nth-child(7) {
+  background-image: url(image/pro.tradein.png);
+}
+.products-item:nth-child(8) {
+  background-image: url(image/pro.card.png);
+}
+
+@media (max-width: 768px) {
+  .products-item:nth-child(1) {
+    width: 100%;
+  }
+  .products-item:nth-child(2) {
+    background-image: url(image/pro.ipadair-pad.png);
+  }
+  .products-item:nth-child(3) {
+    background-image: url(image/pro.watch.pad.png);
+  }
+  .products-item:nth-child(5) {
+    display: block;
+  }
+  .products-item:nth-child(6) {
+    display: block;
+  }
+  .products-item:nth-child(8) {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .products {
+    flex-direction: column;
+    margin: 12px 0;
+  }
+  .products-item {
+    width: 100%;
+  }
+  .products-item:nth-child(1) {
+    width: 100%;
+  }
+  .products-item:nth-child(2) {
+    background-image: url(image/pro.ipadair-pad.png);
+  }
+  .products-item:nth-child(3) {
+    background-image: url(image/pro.watch.pad.png);
+  }
 }
