@@ -69,14 +69,47 @@ header > button + button + button {
   background-position: center;
 }
 .iphone16pro-text {
+  text-align: center;
+  padding-top: 55px;
 }
 .iphone16pro-text div:nth-child(1) {
+  font-size: 52px;
+  line-height: 60px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+  color: rgba(245, 245, 247, 1);
 }
 .iphone16pro-text div:nth-child(2) {
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(245, 245, 247, 1);
+  margin-top: 16px;
+  margin-bottom: 20px;
 }
 .iphone16pro-text button:nth-child(1) {
+  width: 123px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  background-color: rgba(0, 113, 227, 1);
+  padding: 12px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  color: rgba(255, 255, 255, 1);
+  margin-right: 16px;
 }
 .iphone16pro-text button:nth-child(2) {
+  width: 68px;
+  height: 44px;
+  border-radius: 22px;
+  border: 1px solid rgba(41, 151, 255, 1);
+  padding: 12px 20px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  color: rgba(41, 151, 255, 1);
 }
 
 /* iphone16  */
@@ -89,14 +122,47 @@ header > button + button + button {
   margin: 12px auto;
 }
 .iphone16-text {
+  padding-top: 55px;
+  text-align: center;
 }
 .iphone16-text div:nth-child(1) {
+  font-size: 52px;
+  line-height: 60px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+  color: rgba(245, 245, 247, 1);
 }
 .iphone16-text div:nth-child(2) {
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(245, 245, 247, 1);
+  margin-top: 16px;
+  margin-bottom: 20px;
 }
 .iphone16-text button:nth-child(1) {
+  width: 123px;
+  height: 44px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
+  padding: 12px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  color: rgba(0, 0, 0, 1);
+  margin-right: 16px;
 }
 .iphone16-text button:nth-child(2) {
+  width: 68px;
+  height: 44px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  padding: 12px 20px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  color: rgba(255, 255, 255, 1);
 }
 
 /* gift magic */
@@ -107,6 +173,37 @@ header > button + button + button {
   background-position: center;
   background-repeat: no-repeat;
 }
+.giftmagic-text {
+  padding-top: 446px;
+  text-align: center;
+}
+.giftmagic-text div:nth-child(1) {
+  font-size: 52px;
+  line-height: 60px;
+  letter-spacing: -0.28px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+}
+.giftmagic-text div:nth-child(2) {
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 1);
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+.giftmagic-text button {
+  width: 114px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  padding: 12px 20px;
+  background-color: rgba(0, 113, 227, 1);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  color: rgba(255, 255, 255, 1);
+}
+
 /* products */
 .products {
   display: flex;
@@ -121,29 +218,96 @@ header > button + button + button {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* ipadair */
 .products-item:nth-child(1) {
   background-image: url(image/pro.ipadair.png);
 }
+.ipadair-text {
+  padding-top: 58px;
+  text-align: center;
+}
+.ipadair-text div:nth-child(1) {
+  width: 430px;
+  height: 33px;
+  background-image: url(image/pro.heading.ipadair.png);
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ipadair-text div:nth-child(2) {
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(29, 29, 31, 1);
+  margin-top: 9px;
+  margin-bottom: 20px;
+}
+.ipadair-text button:nth-child(1) {
+  width: 115px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  padding: 10px 16px;
+  background-color: rgba(0, 113, 227, 1);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  color: rgba(255, 255, 255, 1);
+  margin-right: 16px;
+}
+.ipadair-text button:nth-child(2) {
+  width: 68px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(41, 151, 255, 1);
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  color: rgba(41, 151, 255, 1);
+}
+.ipadair-text div:nth-child(4) {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: rgba(186, 98, 252, 1);
+  margin-top: 324px;
+}
+
+/* airpodpro */
 .products-item:nth-child(2) {
   background-image: url(image/pro.airpodspro2.png);
 }
+
+/* watch */
 .products-item:nth-child(3) {
   background-image: url(image/pro.watch.png);
 }
+
+/* macbookair */
 .products-item:nth-child(4) {
   background-image: url(image/pro.macbookair.png);
 }
+
+/* smallbuiness */
 .products-item:nth-child(5) {
   background-image: url(image/pro.smallbusiness.png);
   display: none;
 }
+
+/* carrierdeals */
 .products-item:nth-child(6) {
   background-image: url(image/pro.carrierdeals.png);
   display: none;
 }
+
+/* tradein */
 .products-item:nth-child(7) {
   background-image: url(image/pro.tradein.png);
 }
+
+/* card */
 .products-item:nth-child(8) {
   background-image: url(image/pro.card.png);
 }
@@ -199,14 +363,16 @@ header > button + button + button {
     margin: 0;
   }
   .iphone16pro-text {
+    padding-top: 58px;
   }
   .iphone16pro-text div:nth-child(1) {
+    font-size: 42px;
+    letter-spacing: 0px;
   }
   .iphone16pro-text div:nth-child(2) {
-  }
-  .iphone16pro-text button:nth-child(1) {
-  }
-  .iphone16pro-text button:nth-child(2) {
+    font-size: 22px;
+    margin-top: 4px;
+    margin-bottom: 16px;
   }
 
   /* iphone16 */
@@ -214,14 +380,19 @@ header > button + button + button {
     width: 100%;
   }
   .iphone16-text {
+    padding-top: 58px;
   }
   .iphone16-text div:nth-child(1) {
+    font-size: 42px;
+    letter-spacing: 0px;
   }
   .iphone16-text div:nth-child(2) {
+    font-size: 22px;
+    margin-top: 4px;
+    margin-bottom: 16px;
   }
   .iphone16-text button:nth-child(1) {
-  }
-  .iphone16-text button:nth-child(2) {
+    border: 0;
   }
 
   /* gift magic */
@@ -233,6 +404,51 @@ header > button + button + button {
   .products-item:nth-child(1) {
     width: 100%;
   }
+
+  /* ipadair */
+  .ipadair-text div:nth-child(1) {
+    width: 405px;
+    height: 39px;
+    margin: auto;
+  }
+  .ipadair-text div:nth-child(2) {
+    font-size: 22px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  .ipadair-text button:nth-child(1) {
+    width: 123px;
+    height: 44px;
+    border-radius: 22px;
+    border: 0;
+    padding: 12px 20px;
+    background-color: rgba(0, 113, 227, 1);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.37px;
+    color: rgba(255, 255, 255, 1);
+    margin-right: 16px;
+  }
+  .ipadair-text button:nth-child(2) {
+    width: 68px;
+    height: 44px;
+    border-radius: 22px;
+    border: 1px solid rgba(41, 151, 255, 1);
+    background-color: transparent;
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.37px;
+    color: rgba(41, 151, 255, 1);
+  }
+  .ipadair-text div:nth-child(4) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 367px;
+  }
+
   .products-item:nth-child(2) {
     background-image: url(image/pro.airpods4.pad.png);
   }
@@ -300,10 +516,77 @@ header > button + button + button {
   .iphone16pro {
     background-image: url(image/iphone16pro.pho.png);
   }
-
+  .iphone16pro-text {
+    padding-top: 350px;
+  }
+  .iphone16pro-text div:nth-child(1) {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing: 0px;
+  }
+  .iphone16pro-text div:nth-child(2) {
+    font-size: 18px;
+    line-height: 120%;
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+  .iphone16pro-text button:nth-child(1) {
+    width: 107px;
+    height: 36px;
+    border-radius: 18px;
+    border: 0;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 12px;
+  }
+  .iphone16pro-text button:nth-child(2) {
+    width: 66px;
+    height: 36px;
+    border-radius: 18px;
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
   /* iphone16 */
   .iphone16 {
     background-image: url(image/iphone16.pho.png);
+  }
+  .iphone16-text {
+    padding-top: 36px;
+  }
+  .iphone16-text div:nth-child(1) {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing: 0px;
+  }
+  .iphone16-text div:nth-child(2) {
+    font-size: 18px;
+    line-height: 120%;
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+  .iphone16-text button:nth-child(1) {
+    width: 107px;
+    height: 36px;
+    border-radius: 18px;
+    border: 0;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 12px;
+  }
+  .iphone16-text button:nth-child(2) {
+    width: 66px;
+    height: 36px;
+    border-radius: 18px;
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
   }
 
   /* gift magic */
@@ -322,6 +605,54 @@ header > button + button + button {
   .products-item:nth-child(1) {
     width: 100%;
   }
+
+  /* ipadair */
+  .ipadair-text {
+    padding-top: 36px;
+  }
+  .ipadair-text div:nth-child(1) {
+    width: 180px;
+    height: 41.86px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .ipadair-text div:nth-child(2) {
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  .ipadair-text button:nth-child(1) {
+    width: 107px;
+    height: 36px;
+    border-radius: 18px;
+    border: 0;
+    padding: 8px 16px;
+    background-color: rgba(0, 113, 227, 1);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, 1);
+    margin-right: 12px;
+  }
+  .ipadair-text button:nth-child(2) {
+    width: 66px;
+    height: 36px;
+    border-radius: 18px;
+    border: 1px solid rgba(41, 151, 255, 1);
+    background-color: transparent;
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: rgba(41, 151, 255, 1);
+  }
+  .ipadair-text div:nth-child(4) {
+    margin-top: 276.14px;
+  }
+
   .products-item:nth-child(2) {
     background-image: url(image/pro.airpods4.pad.png);
   }
