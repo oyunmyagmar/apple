@@ -4,7 +4,7 @@ body {
   font-family: "Inter";
   margin: 0;
 }
-
+/* header */
 header {
   background-color: rgba(245, 245, 247, 0.8);
   display: flex;
@@ -12,31 +12,102 @@ header {
   justify-content: center;
   gap: 24px;
 }
-
+header > a {
+  width: 30px;
+  height: 44px;
+  background-image: url(image/h-apple-logo.png);
+  background-size: cover;
+}
 nav {
   display: flex;
+  align-items: center;
   gap: 24px;
 }
 nav a {
   font-size: 12px;
-  line-height: 60px;
+  line-height: 44px;
   letter-spacing: -0.28px;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
 }
-header button:nth-child(1) {
+header > button {
+  background-color: transparent;
+  border: none;
   width: 31px;
-  height: 40px;
-  border: none;
+  height: 44px;
   background-image: url(image/h-search.png);
-  background-size: covers;
+  background-size: cover;
 }
-header button:nth-child(2) {
+header > button + button {
   width: 30px;
-  height: 40px;
-  border: none;
-  background-image: url(image/h-shopbag.png);
+  background-image: url(image/h-bag.png);
 }
+header > button + button + button {
+  background-image: url(image/h-menu-button.pad.png);
+  display: none;
+}
+
+/* donate */
+.donate-banner {
+  background-color: rgba(255, 255, 255, 1);
+}
+.donate-banner > div {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(29, 29, 31, 1);
+  margin: 16px 0;
+  text-align: center;
+}
+
+/* iphone16pro */
+.iphone16pro {
+  background-image: url(image/iphone16pro.png);
+  height: 692px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.iphone16pro-text {
+}
+.iphone16pro-text div:nth-child(1) {
+}
+.iphone16pro-text div:nth-child(2) {
+}
+.iphone16pro-text button:nth-child(1) {
+}
+.iphone16pro-text button:nth-child(2) {
+}
+
+/* iphone16  */
+.iphone16 {
+  background-image: url(image/iphone16.png);
+  height: 692px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 12px auto;
+}
+.iphone16-text {
+}
+.iphone16-text div:nth-child(1) {
+}
+.iphone16-text div:nth-child(2) {
+}
+.iphone16-text button:nth-child(1) {
+}
+.iphone16-text button:nth-child(2) {
+}
+
+/* gift magic */
+.giftmagic {
+  background-image: url(image/giftmagic.png);
+  height: 692px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* products */
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -54,7 +125,7 @@ header button:nth-child(2) {
   background-image: url(image/pro.ipadair.png);
 }
 .products-item:nth-child(2) {
-  background-image: url(image/pro.airpods.png);
+  background-image: url(image/pro.airpodspro2.png);
 }
 .products-item:nth-child(3) {
   background-image: url(image/pro.watch.png);
@@ -78,11 +149,92 @@ header button:nth-child(2) {
 }
 
 @media (max-width: 768px) {
+  /* header */
+  header {
+    height: 48px;
+    gap: 0;
+    justify-content: flex-end;
+  }
+  header > a {
+    margin-right: auto;
+    width: 49px;
+    height: 48px;
+    background-size: auto;
+    background-position: center;
+  }
+  header nav {
+    display: none;
+  }
+  header > button {
+    width: 48px;
+    height: 48px;
+    background-size: auto;
+    background-position: center;
+  }
+  header > button + button {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-size: auto;
+    background-position: center;
+  }
+  header > button + button + button {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-size: auto;
+    background-position: center;
+  }
+
+  /* donate */
+  .donate-banner > div {
+    margin: 12px 0;
+    text-wrap-style: balance;
+    padding: 16px 0;
+  }
+
+  /* iphone16pro */
+  .iphone16pro {
+    background-image: url(image/iphone16pro.pad.png);
+    margin: 0;
+  }
+  .iphone16pro-text {
+  }
+  .iphone16pro-text div:nth-child(1) {
+  }
+  .iphone16pro-text div:nth-child(2) {
+  }
+  .iphone16pro-text button:nth-child(1) {
+  }
+  .iphone16pro-text button:nth-child(2) {
+  }
+
+  /* iphone16 */
+  .iphone16 {
+    width: 100%;
+  }
+  .iphone16-text {
+  }
+  .iphone16-text div:nth-child(1) {
+  }
+  .iphone16-text div:nth-child(2) {
+  }
+  .iphone16-text button:nth-child(1) {
+  }
+  .iphone16-text button:nth-child(2) {
+  }
+
+  /* gift magic */
+  .giftmagic {
+    display: none;
+  }
+
+  /* product */
   .products-item:nth-child(1) {
     width: 100%;
   }
   .products-item:nth-child(2) {
-    background-image: url(image/pro.ipadair-pad.png);
+    background-image: url(image/pro.airpods4.pad.png);
   }
   .products-item:nth-child(3) {
     background-image: url(image/pro.watch.pad.png);
@@ -99,9 +251,70 @@ header button:nth-child(2) {
 }
 
 @media (max-width: 390px) {
+  /* header */
+  header {
+    height: 48px;
+    gap: 0;
+    justify-content: flex-end;
+  }
+  header > a {
+    margin-right: auto;
+    width: 49px;
+    height: 48px;
+    background-size: auto;
+    background-position: center;
+  }
+  header nav {
+    display: none;
+  }
+  header > button {
+    width: 48px;
+    height: 48px;
+    background-size: auto;
+    background-position: center;
+  }
+  header > button + button {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-size: auto;
+    background-position: center;
+  }
+  header > button + button + button {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-size: auto;
+    background-position: center;
+  }
+
+  /* donate */
+  .donate-banner > div {
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-wrap-style: balance;
+    padding: 18px 0;
+  }
+
+  /* iphone16pro */
+  .iphone16pro {
+    background-image: url(image/iphone16pro.pho.png);
+  }
+
+  /* iphone16 */
+  .iphone16 {
+    background-image: url(image/iphone16.pho.png);
+  }
+
+  /* gift magic */
+  .giftmagic {
+    display: none;
+  }
+
+  /* products */
   .products {
     flex-direction: column;
-    margin: 12px 0;
+    margin: 0;
   }
   .products-item {
     width: 100%;
@@ -110,7 +323,7 @@ header button:nth-child(2) {
     width: 100%;
   }
   .products-item:nth-child(2) {
-    background-image: url(image/pro.ipadair-pad.png);
+    background-image: url(image/pro.airpods4.pad.png);
   }
   .products-item:nth-child(3) {
     background-image: url(image/pro.watch.pad.png);
