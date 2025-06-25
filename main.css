@@ -217,6 +217,7 @@ header > button + button + button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 /* ipadair */
@@ -225,7 +226,6 @@ header > button + button + button {
 }
 .ipadair-text {
   padding-top: 58px;
-  text-align: center;
 }
 .ipadair-text div:nth-child(1) {
   width: 430px;
@@ -313,26 +313,25 @@ header > button + button + button {
   background-image: url(image/pro.card.png);
 }
 
-/* scroll */
-.movielinkscroller {
+/* movie scroll */
+.movie-link-scroller {
   width: 100%;
-  overflow-x: scroll;
-  scroll-snap-type: mandatory;
+  overflow: scroll;
   scroll-snap-align: center;
-  margin-bottom: 32px;
 }
 .slide-container {
   display: flex;
-  width: 12500px;
+  width: 12644px;
   gap: 16px;
 }
 .slide {
   width: 1250px;
   height: 668px;
   margin: 0 auto;
-  background-image: url(image/Link.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 .slide:nth-child(1) {
   background-image: url(image/scroll1.png);
 }
@@ -362,6 +361,62 @@ header > button + button + button {
 }
 .slide:nth-child(10) {
   background-image: url(image/scroll10.png);
+}
+.movie-link-scroller ul {
+  list-style-type: none;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin: 12 auto;
+  padding: 0 7px;
+}
+.movie-link-scroller li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.movie-link-scroller li:nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* content scroll */
+.content-link-scroller {
+  width: 100%;
+  overflow: scroll;
+  scroll-snap-align: center;
+  margin-bottom: 56px;
+}
+.flow-container {
+  width: 2582px;
+  display: flex;
+  gap: 16px;
+}
+.flow {
+  width: 417px;
+  height: 236px;
+  background-color: blue;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.flow:nth-child(1) {
+  background-image: url(image/flow1.png);
+}
+.flow:nth-child(2) {
+  background-image: url(image/flow2.png);
+}
+.flow:nth-child(3) {
+  background-image: url(image/flow3.png);
+}
+.flow:nth-child(4) {
+  background-image: url(image/flow4.png);
+}
+.flow:nth-child(5) {
+  background-image: url(image/flow5.jpg);
+}
+.flow:nth-child(6) {
+  background-image: url(image/flow6.png);
 }
 
 @media (max-width: 768px) {
@@ -410,6 +465,7 @@ header > button + button + button {
 
   /* iphone16pro */
   .iphone16pro {
+    background-image: url(image/iphone16pro.pad.png);
     height: 650px;
   }
   .iphone16pro-text {
@@ -456,8 +512,9 @@ header > button + button + button {
     height: 490px;
   }
 
-  /* ipadair */
+  /*product-ipadair */
   .products-item:nth-child(1) {
+    background-image: url(image/pro.ipadair.pad.png);
     width: 100%;
     height: 650px;
   }
@@ -490,18 +547,24 @@ header > button + button + button {
     margin-top: 367px;
   }
 
-  /* airpodpro */
+  /* product-airpodpro */
   .products-item:nth-child(2) {
     background-image: url(image/pro.airpods4.pad.png);
   }
   .products-item:nth-child(3) {
     background-image: url(image/pro.watch.pad.png);
   }
+  .products-item:nth-child(4) {
+    background-image: url(image/pro.macbookair.pad.png);
+  }
   .products-item:nth-child(5) {
     display: block;
   }
   .products-item:nth-child(6) {
     display: block;
+  }
+  .products-item:nth-child(7) {
+    background-image: url(image/pro.tradein.pad.png);
   }
   .products-item:nth-child(8) {
     display: none;
@@ -649,6 +712,7 @@ header > button + button + button {
 
   /* ipadair */
   .products-item:nth-child(1) {
+    background-image: url(image/pro.ipadair.pho.png);
     height: 500px;
   }
   .ipadair-text {
@@ -688,6 +752,6 @@ header > button + button + button {
     background-image: url(image/pro.airpods4.pad.png);
   }
   .products-item:nth-child(3) {
-    background-image: url(image/pro.watch.pad.png);
+    background-image: url(image/pro.watch.pho.png);
   }
 }
