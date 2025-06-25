@@ -313,6 +313,41 @@ header > button + button + button {
   background-image: url(image/pro.card.png);
 }
 
+/* scroll */
+.movielinkscroller {
+}
+.slide-container {
+}
+.slide {
+  width: 1250px;
+  height: 668;
+  background-image: url(image/scroll1.jpg);
+}
+.slide:nth-child(1) {
+  background-image: url(image/scroll1.jpg);
+}
+.slide:nth-child(2) {
+  background-image: url(image/scroll2.jpg);
+}
+.slide:nth-child(3) {
+  background-image: url(image/scroll3.jpg);
+}
+.slide:nth-child(4) {
+  background-image: url(image/scroll4.jpg);
+}
+.slide:nth-child(5) {
+  background-image: url(image/scroll5.jpg);
+}
+.slide:nth-child(6) {
+  background-image: url(image/scroll6.jpg);
+}
+.slide:nth-child(7) {
+  background-image: url(image/scroll7.jpg);
+}
+.slide:nth-child(8) {
+  background-image: url(image/scroll8.jpg);
+}
+
 @media (max-width: 768px) {
   /* header */
   header {
