@@ -316,8 +316,8 @@ header > button + button + button {
 /* movie scroll */
 .movie-link-scroller {
   width: 100%;
-  overflow: scroll;
-  scroll-snap-align: center;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 .slide-container {
   display: flex;
@@ -325,11 +325,11 @@ header > button + button + button {
   gap: 16px;
 }
 .slide {
+  box-sizing: border-box;
   width: 1250px;
   height: 668px;
-  margin: 0 auto;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .slide:nth-child(1) {
@@ -365,8 +365,8 @@ header > button + button + button {
 .movie-link-scroller ul {
   list-style-type: none;
   display: flex;
-  gap: 14px;
   justify-content: center;
+  gap: 14px;
   margin: 12 auto;
   padding: 0 7px;
 }
@@ -380,12 +380,40 @@ header > button + button + button {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* movie scroller redo */
+.bigbox {
+  width: 1920px;
+  height: 688px;
+  background-color: rgb(255, 0, 144);
+  margin: 0 auto;
+  background-position: center;
+}
+.boxcontscrol {
+  width: 100%;
+  overflow-x: scroll;
+}
+.boxslide-contain {
+  display: flex;
+  gap: 16px;
+  width: 2502px;
+}
+.boxslide {
+  width: calc(30% - 8px);
+  height: 236px;
+  background-image: url(image/flow2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+}
+/* movie scroller redo */
+
 /* content scroll */
 .content-link-scroller {
   width: 100%;
-  overflow: scroll;
-  scroll-snap-align: center;
   margin-bottom: 56px;
+  overflow: scroll;
 }
 .flow-container {
   width: 2582px;
@@ -395,10 +423,6 @@ header > button + button + button {
 .flow {
   width: 417px;
   height: 236px;
-  background-color: blue;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .flow:nth-child(1) {
   background-image: url(image/flow1.png);
@@ -568,6 +592,16 @@ header > button + button + button {
   }
   .products-item:nth-child(8) {
     display: none;
+  }
+
+  /* movie scroll */
+  .slide {
+    height: 368px;
+  }
+
+  /* content scroll */
+  .flow {
+    height: 194px;
   }
 }
 
@@ -753,5 +787,15 @@ header > button + button + button {
   }
   .products-item:nth-child(3) {
     background-image: url(image/pro.watch.pho.png);
+  }
+
+  /* movie scroll */
+  .slide {
+    height: 533px;
+  }
+
+  /* content scroll */
+  .flow {
+    height: 216px;
   }
 }
