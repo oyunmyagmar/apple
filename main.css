@@ -315,37 +315,53 @@ header > button + button + button {
 
 /* scroll */
 .movielinkscroller {
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-align: center;
+  margin-bottom: 32px;
 }
 .slide-container {
+  display: flex;
+  width: 12500px;
+  gap: 16px;
 }
 .slide {
   width: 1250px;
-  height: 668;
-  background-image: url(image/scroll1.jpg);
+  height: 668px;
+  margin: 0 auto;
+  background-image: url(image/Link.png);
 }
+
 .slide:nth-child(1) {
-  background-image: url(image/scroll1.jpg);
+  background-image: url(image/scroll1.png);
 }
 .slide:nth-child(2) {
-  background-image: url(image/scroll2.jpg);
+  background-image: url(image/scroll2.png);
 }
 .slide:nth-child(3) {
-  background-image: url(image/scroll3.jpg);
+  background-image: url(image/scroll3.png);
 }
 .slide:nth-child(4) {
-  background-image: url(image/scroll4.jpg);
+  background-image: url(image/scroll4.png);
 }
 .slide:nth-child(5) {
-  background-image: url(image/scroll5.jpg);
+  background-image: url(image/scroll5.png);
 }
 .slide:nth-child(6) {
-  background-image: url(image/scroll6.jpg);
+  background-image: url(image/scroll6.png);
 }
 .slide:nth-child(7) {
-  background-image: url(image/scroll7.jpg);
+  background-image: url(image/scroll7.png);
 }
 .slide:nth-child(8) {
-  background-image: url(image/scroll8.jpg);
+  background-image: url(image/scroll8.png);
+}
+.slide:nth-child(9) {
+  background-image: url(image/scroll9.png);
+}
+.slide:nth-child(10) {
+  background-image: url(image/scroll10.png);
 }
 
 @media (max-width: 768px) {
