@@ -55,7 +55,7 @@ header > button + button + button {
   font-size: 14px;
   line-height: 20px;
   color: rgba(29, 29, 31, 1);
-  margin: 16px 0;
+  padding: 16px 0;
   text-align: center;
 }
 
@@ -231,9 +231,10 @@ header > button + button + button {
   width: 430px;
   height: 33px;
   background-image: url(image/pro.heading.ipadair.png);
-  margin: auto;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
+  background-position: center;
+  margin: 0 auto;
 }
 .ipadair-text div:nth-child(2) {
   font-size: 18px;
@@ -353,14 +354,12 @@ header > button + button + button {
   /* donate */
   .donate-banner > div {
     margin: 12px 0;
-    text-wrap-style: balance;
-    padding: 16px 0;
+    padding: 4px 162px;
   }
 
   /* iphone16pro */
   .iphone16pro {
-    background-image: url(image/iphone16pro.pad.png);
-    margin: 0;
+    height: 650px;
   }
   .iphone16pro-text {
     padding-top: 58px;
@@ -377,7 +376,8 @@ header > button + button + button {
 
   /* iphone16 */
   .iphone16 {
-    width: 100%;
+    background-image: url(image/iphone16.pad.png);
+    height: 650px;
   }
   .iphone16-text {
     padding-top: 58px;
@@ -401,15 +401,19 @@ header > button + button + button {
   }
 
   /* product */
-  .products-item:nth-child(1) {
-    width: 100%;
+  .products-item {
+    height: 490px;
   }
 
   /* ipadair */
+  .products-item:nth-child(1) {
+    width: 100%;
+    height: 650px;
+  }
   .ipadair-text div:nth-child(1) {
     width: 405px;
     height: 39px;
-    margin: auto;
+    margin: 0 auto;
   }
   .ipadair-text div:nth-child(2) {
     font-size: 22px;
@@ -422,26 +426,12 @@ header > button + button + button {
     width: 123px;
     height: 44px;
     border-radius: 22px;
-    border: 0;
     padding: 12px 20px;
-    background-color: rgba(0, 113, 227, 1);
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -0.37px;
-    color: rgba(255, 255, 255, 1);
-    margin-right: 16px;
   }
   .ipadair-text button:nth-child(2) {
-    width: 68px;
     height: 44px;
     border-radius: 22px;
-    border: 1px solid rgba(41, 151, 255, 1);
-    background-color: transparent;
     padding: 12px 20px;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -0.37px;
-    color: rgba(41, 151, 255, 1);
   }
   .ipadair-text div:nth-child(4) {
     font-size: 20px;
@@ -449,6 +439,7 @@ header > button + button + button {
     margin-top: 367px;
   }
 
+  /* airpodpro */
   .products-item:nth-child(2) {
     background-image: url(image/pro.airpods4.pad.png);
   }
@@ -508,13 +499,13 @@ header > button + button + button {
   .donate-banner > div {
     margin-top: 0;
     margin-bottom: 12px;
-    text-wrap-style: balance;
-    padding: 18px 0;
+    padding: 6.5px 31px;
   }
 
   /* iphone16pro */
   .iphone16pro {
     background-image: url(image/iphone16pro.pho.png);
+    height: 500px;
   }
   .iphone16pro-text {
     padding-top: 350px;
@@ -553,6 +544,7 @@ header > button + button + button {
   /* iphone16 */
   .iphone16 {
     background-image: url(image/iphone16.pho.png);
+    height: 500px;
   }
   .iphone16-text {
     padding-top: 36px;
@@ -601,58 +593,46 @@ header > button + button + button {
   }
   .products-item {
     width: 100%;
-  }
-  .products-item:nth-child(1) {
-    width: 100%;
+    height: 500px;
   }
 
   /* ipadair */
+  .products-item:nth-child(1) {
+    height: 500px;
+  }
   .ipadair-text {
     padding-top: 36px;
   }
   .ipadair-text div:nth-child(1) {
     width: 180px;
     height: 41.86px;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size: contain;
+    margin: 0 auto;
   }
   .ipadair-text div:nth-child(2) {
     font-size: 18px;
-    line-height: 32px;
-    color: rgba(0, 0, 0, 1);
-    margin-top: 8px;
-    margin-bottom: 16px;
   }
   .ipadair-text button:nth-child(1) {
     width: 107px;
     height: 36px;
     border-radius: 18px;
-    border: 0;
     padding: 8px 16px;
-    background-color: rgba(0, 113, 227, 1);
     font-size: 14px;
-    line-height: 20px;
     letter-spacing: 0px;
-    color: rgba(255, 255, 255, 1);
     margin-right: 12px;
   }
   .ipadair-text button:nth-child(2) {
     width: 66px;
     height: 36px;
     border-radius: 18px;
-    border: 1px solid rgba(41, 151, 255, 1);
-    background-color: transparent;
     padding: 8px 20px;
     font-size: 14px;
-    line-height: 20px;
     letter-spacing: 0px;
-    color: rgba(41, 151, 255, 1);
   }
   .ipadair-text div:nth-child(4) {
     margin-top: 276.14px;
   }
 
+  /* airpodpro */
   .products-item:nth-child(2) {
     background-image: url(image/pro.airpods4.pad.png);
   }
