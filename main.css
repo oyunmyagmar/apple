@@ -1,7 +1,6 @@
 body {
   font-family: "Inter";
   margin: 0;
-  font-family: "Inter";
 }
 /* header */
 header {
@@ -418,159 +417,135 @@ header > button + button + button {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* content scroll */
-.apple-content {
-  width: 100vw;
-  display: flex;
-  gap: 16px;
+/* neww */
+/* movie scroll redo */
+.a-movies-container {
+  width: 100%;
   overflow: scroll;
-  margin-bottom: 56px;
 }
-
-.apple-content__flows {
-}
-.flow-container {
-  width: 100vw;
+.a-movies {
   display: flex;
   gap: 16px;
-  overflow: scroll;
-  margin-bottom: 56px;
+  width: 6314px;
 }
-.flow {
-  min-width: 22vw;
-  max-width: 417px;
-  height: 236px;
-}
-.flow:nth-child(1) {
-  background-image: url(image/flow1.png);
-}
-
-/* content scroll redo */
-.content-flows {
-  width: 100vw;
-
-  display: flex;
-  gap: 16px;
-  overflow-x: scroll;
-}
-.pilates {
-  aspect-ratio: 417/236;
+.a-movie {
+  box-sizing: border-box;
+  width: 1250px;
+  height: 668px;
+  background-color: rgb(171, 226, 176);
+  margin-bottom: 32px;
   position: relative;
-  display: flex;
-  align-items: flex-end;
+  box-sizing: border-box;
 }
-.pilates__img {
+.a-movie__img {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  object-fit: cover;
+  aspect-ratio: 1250/668;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-.pilates__info {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 600;
-  letter-spacing: -0.22px;
-  color: rgba(255, 255, 255, 1);
+.a-movie__text {
   position: absolute;
-  left: 15px;
-  bottom: 20px;
-  width: 223.69px;
-}
-.randb {
-  aspect-ratio: 417/236;
-  position: relative;
   display: flex;
   align-items: center;
+  left: 70px;
+  bottom: 58px;
+  gap: 20px;
 }
-.randb__img {
+.a-movie__text button {
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  color: rgba(0, 0, 0, 1);
+  padding: 12px 20px;
+  border-radius: 22px;
+  border: none;
+  background-color: rgba(245, 245, 247, 1);
+}
+.a-movie__text .genre {
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+.a-movie__text span {
+  font-weight: 700;
+}
+/* indesktopver left only5movies */
+.mov6,
+.mov7,
+.mov8,
+.mov9,
+.mov10 {
+  display: none;
+}
+
+/* content scroll */
+.a-contents-container {
+  width: 100%;
+  overflow: scroll;
+}
+.a-contents {
+  display: flex;
+  width: 3015px;
+  gap: 16px;
+}
+.a-content {
+  box-sizing: border-box;
+  width: 417px;
+  height: 236px;
+  background-color: rgba(235, 183, 153, 1);
+  margin-bottom: 56px;
+  position: relative;
+}
+.a-content__img {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  aspect-ratio: 417/236;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.randb__info {
+.a-content__text {
   font-size: 14px;
   line-height: 18px;
-  font-weight: 600;
   letter-spacing: -0.22px;
+  font-weight: 600;
   color: rgba(255, 255, 255, 1);
   position: absolute;
+}
+.a-content .pilates {
+  left: 15px;
+  bottom: 20px;
+}
+.a-content .randb {
+  top: 109px;
   left: 226px;
 }
-.nba {
-  aspect-ratio: 417/236;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-}
-.nba__img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.nba__info {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 600;
-  letter-spacing: -0.22px;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
+.a-content .nba {
   left: 15px;
   bottom: 20px;
 }
-.strength {
-  aspect-ratio: 417/236;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-}
-.strength__img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.strength__info {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 600;
-  letter-spacing: -0.22px;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
+.a-content .strength {
   left: 15px;
   bottom: 20px;
 }
-.alternative {
-  aspect-ratio: 417/236;
-  position: relative;
+.a-content .laoficial {
+  left: 15px;
+  bottom: 20px;
 }
-.alternative__img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  object-fit: contain;
-  background-color: rgba(235, 183, 153, 1);
-  width: 100%;
-  height: 100%;
+.a-content .travel {
+  left: 15px;
+  bottom: 20px;
 }
 @media (max-width: 768px) {
   /* header */
@@ -733,15 +708,54 @@ header > button + button + button {
   .slide:nth-child(5) {
     display: block;
   }
-
-  /* content scroll */
-  .flow-container {
-    margin-bottom: 68px;
+  /* neww */
+  /* movie scroll */
+  .a-movies {
+    width: 3509px;
   }
-  .flow {
-    min-width: 37vw;
-    max-width: 286px;
+  .a-movie {
+    width: 689px;
+    height: 368px;
+  }
+  .a-movie__img {
+    aspect-ratio: 689/368;
+  }
+  .a-movie__text {
+    gap: 18px;
+    left: 30px;
+    bottom: 27px;
+  }
+  .a-movie__text button {
+    font-size: 14px;
+    letter-spacing: 0px;
+    padding: 8px 14px;
+    border-radius: 18px;
+  }
+  .a-movie__text .genre {
+    width: 401px;
+  }
+  /* content scroll */
+  .a-contents {
+    width: 2098px;
+  }
+  .a-content {
+    width: 286px;
     height: 161px;
+    margin-bottom: 101px;
+  }
+  .a-content__text {
+    font-weight: 700;
+    color: rgba(29, 29, 31, 1);
+  }
+  .a-content .pilates,
+  .a-content .randb,
+  .a-content .nba,
+  .a-content .alternative,
+  .a-content .strength,
+  .a-content .laoficial,
+  .a-content .travel {
+    top: 176px;
+    left: 0;
   }
 }
 
@@ -955,13 +969,55 @@ header > button + button + button {
     display: block;
   }
 
-  /* content scroll */
-  .flow-container {
-    margin-bottom: 56px;
+  /* neww */
+  /* movie scroll */
+  .mov2 {
+    display: none;
   }
-  .flow {
-    min-width: 61vw;
-    max-width: 238px;
+  .mov6,
+  .mov7,
+  .mov8,
+  .mov9,
+  .mov10 {
+    display: block;
+  }
+  .a-movies {
+    width: 2594px;
+  }
+  .a-movie {
+    width: 274px;
+    height: 495px;
+    margin-bottom: 50px;
+  }
+  .a-movie__img {
+    aspect-ratio: 274/495;
+  }
+  .a-movie__text {
+    display: none;
+  }
+
+  /* content scroll */
+  .a-contents {
+    width: 1562px;
+  }
+  .a-content {
+    width: 238px;
     height: 134px;
+    margin-bottom: 82px;
+  }
+  .a-content__text {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .a-content .pilates,
+  .a-content .randb,
+  .a-content .nba,
+  .a-content .alternative,
+  .a-content .strength,
+  .a-content .laoficial,
+  .a-content .travel {
+    top: 144px;
+    left: 0;
   }
 }
