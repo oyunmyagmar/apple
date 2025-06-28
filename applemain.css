@@ -95,6 +95,7 @@ header {
   gap: 16px;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 .iphone16pro__button {
   font-size: 16px;
@@ -104,7 +105,7 @@ header {
   padding: 12px 20px;
   background-color: rgba(0, 113, 227, 1);
   border-radius: 22px;
-  border: none;
+  border: 1px solid transparent;
 }
 .iphone16pro__button:hover {
   background-color: rgb(0 119 237);
@@ -116,7 +117,7 @@ header {
 }
 .iphone16pro__button--bluebordtrans:hover {
   color: rgba(255, 255, 255, 1);
-  border-color: transparent;
+  border-color: 1px solid transparent;
 }
 /* iPhone 16 */
 .iphone16-container {
@@ -127,6 +128,7 @@ header {
   background-size: cover;
   max-width: 1920px;
   margin: 0 auto;
+  margin-bottom: 12px;
 }
 .iphone16 {
   text-align: center;
@@ -151,6 +153,7 @@ header {
   gap: 16px;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 .iphone16__button {
   font-size: 16px;
@@ -171,4 +174,206 @@ header {
 }
 .iphone16__button--trans:hover {
   color: rgba(0, 0, 0, 1);
+}
+/* Gift magic */
+.giftmagic-container {
+  background-image: url(images/giftmagic.png);
+  height: 692px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+.giftmagic {
+  text-align: center;
+  padding-top: 446px;
+}
+.giftmagic__title {
+  font-size: 52px;
+  line-height: 60px;
+  letter-spacing: -0.28px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+}
+.giftmagic__subtitle {
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 1);
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+.giftmagic__button {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 113, 227, 1);
+  padding: 12px 20px;
+  border-radius: 22px;
+  border: none;
+  box-sizing: border-box;
+}
+.giftmagic__button:hover {
+  background-color: rgb(0 119 237);
+}
+/* Apple Products */
+.apple-products {
+  background-color: rgba(0, 0, 0, 1);
+  max-width: 1920px;
+  background-position: center;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 12px;
+  column-gap: 12px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+.apple-product {
+  width: calc(50% - 6px);
+  height: 580px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding-top: 58px;
+  box-sizing: border-box;
+}
+.apple-product--ipadair {
+  background-image: url(images/p-ipadair.png);
+}
+.apple-product--airpodspro2 {
+  background-image: url(images/p-airpodspro2.png);
+  padding-top: 401px;
+}
+.apple-product--watch {
+  background-image: url(images/p-watch.png);
+}
+.apple-product--macbookair {
+  background-image: url(images/p-macbookair.png);
+  padding-top: 48px;
+}
+.apple-product--smallbusiness {
+  display: none;
+}
+.apple-product--carrierdeals {
+  display: none;
+}
+.apple-product--tradein {
+  background-image: url(images/p-tradein.png);
+}
+.apple-product--card {
+  background-image: url(images/p-card.png);
+}
+.apple-product__title {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  color: rgba(29, 29, 31, 1);
+}
+.apple-product__title--ipadair {
+  width: 100%;
+  height: 33px;
+  background-image: url(images/p-title-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.apple-product__title--watch,
+.apple-product__title--tradein,
+.apple-product__title--card {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: baseline;
+}
+.apple-product__title--watch::before,
+.apple-product__title--tradein::before,
+.apple-product__title--card::before {
+  width: 26px;
+  height: 32px;
+  content: "";
+  background-image: url(images/p-title-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  display: block;
+}
+.apple-product__title--airpodspro2 {
+  color: rgba(245, 245, 247, 1);
+}
+.apple-product__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(29, 29, 31, 1);
+  width: 322px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.apple-product__subtitle--ipadair {
+  margin-top: 9px;
+  margin-bottom: 20px;
+}
+.apple-product__subtitle--airpodspro2 {
+  color: rgba(245, 245, 247, 1);
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.apple-product__subtitle--watch,
+.apple-product__subtitle--tradein,
+.apple-product__subtitle--card {
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+.apple-product__subtitle--macbookair {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.apple-product__buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.apple-product__button {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  color: rgba(255, 255, 255, 1);
+  padding: 10px 16px;
+  background-color: rgba(0, 113, 227, 1);
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+.apple-product__button:hover {
+  background-color: rgb(0 119 237);
+}
+.apple-product__button--transparent {
+  background-color: transparent;
+  border: 1px solid rgba(41, 151, 255, 1);
+  color: rgba(41, 151, 255, 1);
+  padding: 10px 20px;
+}
+.apple-product__button--transparent:hover {
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid transparent;
+}
+.apple-product__sub {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 324px;
+  background: linear-gradient(
+    94deg,
+    rgba(0, 144, 247, 1),
+    rgba(186, 98, 252, 1),
+    rgba(242, 65, 107, 1),
+    rgba(245, 86, 0, 1)
+  );
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
