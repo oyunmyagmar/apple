@@ -515,7 +515,8 @@ header {
   background-color: rgba(210, 210, 215, 1);
   margin: 16px;
   display: flex;
-  position: relative;
+  justify-self: flex-end;
+  align-items: center;
 }
 .content-button::after {
   content: "";
@@ -525,7 +526,4 @@ header {
   background-image: url(images/cont-button-icon.png);
   background-repeat: no-repeat;
   background-size: auto;
-  position: absolute;
-  top: 50%;
-  left: 6px;
 }
