@@ -220,7 +220,6 @@ header {
 }
 /* Apple Products */
 .apple-products {
-  background-color: rgba(0, 0, 0, 1);
   max-width: 1920px;
   background-position: center;
   margin: 0 auto;
@@ -365,6 +364,7 @@ header {
 .apple-product__sub {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 500;
   margin-top: 324px;
   background: linear-gradient(
     94deg,
@@ -376,4 +376,87 @@ header {
   background-clip: text;
   color: transparent;
   display: inline-block;
+}
+/* apple tv scroll */
+.tv-scroller {
+  max-width: 1920px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+.tv-slides-container {
+  width: 100%;
+  overflow-x: scroll;
+}
+.tv-slides {
+  width: 6314px;
+  display: flex;
+  gap: 16px;
+}
+.tv-slide {
+  width: 1250px;
+  height: 668px;
+  position: relative;
+}
+.tv-slide__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  aspect-ratio: 1250/668;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.tv-slide__text {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  bottom: 58px;
+  left: 70px;
+}
+.tv-slide__button {
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  color: rgba(0, 0, 0, 1);
+  padding: 12px 20px;
+  background-color: rgba(245, 245, 247, 1);
+  border-radius: 22px;
+  border: none;
+}
+.tv-slide__button:hover {
+  background-color: rgb(255 255 255);
+}
+.tv-slide-text__info {
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+.tv-slide-text__info span {
+  font-weight: 700;
+}
+.tv-scroller .dot-box {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin: 12px auto;
+}
+.tv-scroller .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.42);
+  transition: 100ms linear;
+}
+.tv-scroller .dot:hover {
+  background-color: rgba(0, 0, 0, 0.54);
+}
+.tv-scroller .dot:active {
+  background-color: rgba(0, 0, 0, 0.8);
 }
