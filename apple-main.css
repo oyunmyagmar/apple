@@ -47,6 +47,7 @@ header {
 }
 .header-button--more {
   background-image: url(images/header-more.png);
+  display: none;
 }
 /* banner */
 .banner {
@@ -526,4 +527,27 @@ header {
   background-image: url(images/cont-button-icon.png);
   background-repeat: no-repeat;
   background-size: auto;
+}
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+  .header-button--more {
+    display: block;
+  }
+  header {
+    justify-content: flex-end;
+    gap: 0;
+  }
+  .header-logo {
+    margin-right: auto;
+  }
+  .banner {
+    margin: 12px auto;
+  }
+  .banner__text {
+  }
+}
+
+@media (max-width: 390px) {
 }
