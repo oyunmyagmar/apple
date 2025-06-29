@@ -103,8 +103,6 @@ header {
 .store-head--subheading {
   color: rgba(110, 110, 115, 1);
 }
-.head-questions {
-}
 .question {
   display: flex;
   gap: 16px;
@@ -353,7 +351,7 @@ header {
   aspect-ratio: 400/500;
   object-fit: cover;
 }
-.personalization-card-first__title {
+.personalization-card-first__msg {
   font-size: 26px;
   height: 32px;
   letter-spacing: 0.2px;
@@ -433,5 +431,120 @@ header {
 /* Holiday Picks */
 
 /* Only at Apple */
+.onlyapple-container {
+  background-color: rgba(245, 245, 247, 1);
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 140px;
+  box-sizing: border-box;
+}
+.onlyapple-heads {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+.onlyapple-head {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.onlyapple-head--heading {
+  background: linear-gradient(
+    49deg,
+    rgba(0, 144, 247, 1),
+    rgba(186, 98, 252, 1),
+    rgba(242, 65, 107, 1)
+  );
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+.onlyapple-head--subheading {
+  color: rgba(110, 110, 115, 1);
+}
+.onlyapple-cards-scroller {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.onlyapple-cards {
+  width: 2146px;
+  display: flex;
+  gap: 20px;
+}
+.onlyapple-cardxl {
+  width: 480px;
+  height: 500px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+.onlyapple-cardxl__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+.onlyapple-cardxl__protitle {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: rgba(110, 110, 115, 1);
+  position: absolute;
+  top: 31px;
+  left: 30px;
+}
+.onlyapple-cardxl__msg {
+  position: absolute;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 700;
+  color: rgba(29, 29, 31, 1);
+  top: 50px;
+  left: 30px;
+}
+.onlyapple-cardxl__msg--tradein,
+.onlyapple-cardxl__msg--specialist {
+  margin-top: 4px;
+}
+.onlyapple-cardxs-box {
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.onlyapple-cardxs {
+  width: 313px;
+  height: 240px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: rgba(255, 255, 255, 1);
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.onlyapple-cardxs__msg {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  color: rgba(29, 29, 31, 1);
+}
+.onlyapple-cardxs__msg--custom,
+.onlyapple-cardxs__msg--free {
+  width: 236.59px;
+  padding-top: 82px;
+}
+.onlyapple-cardxs__msg--pay,
+.onlyapple-cardxs__msg--engrave {
+  width: 225.89px;
+  padding-top: 68px;
+}
 
+.onlyapple-cardxs__msg--engrave {
+}
 /* Special Savings */
