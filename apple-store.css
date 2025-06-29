@@ -232,6 +232,7 @@ header {
 .latest-scroller {
   width: 100%;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 .latest-cards {
   width: 2980px;
@@ -299,3 +300,133 @@ header {
   margin-bottom: 9px;
 }
 /* Personalization */
+.personalization-container {
+  background-color: rgba(245, 245, 247, 1);
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 140px;
+  box-sizing: border-box;
+}
+.personalization-heads {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+.personalization-head {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.personalization-head--heading {
+  background: linear-gradient(
+    49deg,
+    rgba(0, 144, 247, 1),
+    rgba(186, 98, 252, 1),
+    rgba(242, 65, 107, 1)
+  );
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+.personalization-head--subheading {
+  color: rgba(110, 110, 115, 1);
+}
+.personalization-cards-scroller {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.personalization-cards {
+  width: 2398px;
+  display: flex;
+  gap: 20px;
+}
+.personalization-card-first {
+  width: 400px;
+  height: 500px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+.personalization-card-first__img {
+  border-radius: 18px;
+  aspect-ratio: 400/500;
+  object-fit: cover;
+}
+.personalization-card-first__title {
+  font-size: 26px;
+  height: 32px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  color: rgba(29, 29, 31, 1);
+  position: absolute;
+  top: 53px;
+  left: 30px;
+  width: 197px;
+}
+.personalization-card {
+  width: 313px;
+  height: 500px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 0 28px;
+  padding-top: 71px;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+}
+.personalization-card-imgbox {
+  width: 230px;
+  height: 230px;
+  position: relative;
+  margin: 0 auto;
+}
+.personalization-card__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+}
+.personalization-card--airpods-max .personalization-card-colorbox {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 21px;
+}
+.personalization-card--airpods-max .personalization-card__color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(235, 183, 153, 1);
+}
+.personalization-card-text {
+  margin-top: 58px;
+}
+.personalization-card--airpods-max .personalization-card-text {
+  margin: 0;
+}
+.personalization-card__option {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: rgba(182, 68, 0, 1);
+}
+.personalization-card__name {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgba(29, 29, 31, 1);
+  margin-top: 6px;
+  margin-bottom: 52px;
+}
+.personalization-card--airpods-4 .personalization-card__name {
+  margin-bottom: 32px;
+}
+.personalization-card__price {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(29, 29, 31, 1);
+}
