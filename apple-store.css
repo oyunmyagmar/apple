@@ -345,10 +345,18 @@ header {
   border-radius: 18px;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   position: relative;
+  box-sizing: border-box;
 }
 .personalization-card-first__img {
   border-radius: 18px;
-  aspect-ratio: 400/500;
+  position: absolute;
+  aspect-ratio: 4/5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .personalization-card-first__msg {
@@ -394,12 +402,6 @@ header {
   margin-top: 25px;
   margin-bottom: 21px;
 }
-.personalization-card--airpods-max .personalization-card__color {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: rgba(235, 183, 153, 1);
-}
 .personalization-card-text {
   margin-top: 58px;
 }
@@ -429,7 +431,144 @@ header {
   color: rgba(29, 29, 31, 1);
 }
 /* Holiday Picks */
+.holiday-container {
+  max-width: 1920px;
+  background-color: rgba(245, 245, 247, 1);
+  margin: 0 auto;
+  padding: 60px 0;
+  padding-left: 140px;
+  box-sizing: border-box;
+}
+.holiday-heads {
+  display: flex;
+  gap: 4px;
+}
+.holiday-head {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: rgba(110, 110, 115, 1);
+}
+.holiday-head--heading {
+  background: linear-gradient(
+    49deg,
+    rgba(0, 144, 247, 1),
+    rgba(186, 98, 252, 1),
+    rgba(242, 65, 107, 1)
+  );
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+.holiday-head--subheading {
+  color: rgba(110, 110, 115, 1);
+}
+.holiday-cards-scroller {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.holiday-cards {
+  width: 2398px;
+  display: flex;
+  gap: 20px;
+}
+.holiday-card-first {
+  width: 400px;
+  height: 500px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  position: relative;
+  box-sizing: border-box;
+}
+.holiday-card-first__img {
+  border-radius: 18px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+.holiday-card-first__msg {
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  color: rgba(29, 29, 31, 1);
+  position: absolute;
+  top: 54px;
+  left: 30px;
+  width: 326px;
+}
+.holiday-card {
+  width: 313px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  padding: 0 28px;
+  box-sizing: border-box;
+  padding-top: 71px;
+  padding-bottom: 32px;
+}
+.holiday-card-imgbox {
+  width: 230px;
+  height: 230px;
+  padding: 0 13.5px;
+  position: relative;
+}
+.holiday-card__img {
+  border-radius: 18px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.holiday-card-colorbox {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  padding-top: 25px;
+  padding-bottom: 21px;
+  box-sizing: border-box;
+}
+.holiday-card-text {
+}
+.holiday-card__option {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: rgba(182, 68, 0, 1);
+}
+.holiday-card__name {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgba(29, 29, 31, 1);
+  margin-top: 6px;
+  margin-bottom: 32px;
+}
+.holiday-card--homepod-mini .holiday-card__name {
+  margin-top: 21px;
+  margin-bottom: 52px;
+}
+.holiday-card--smart-folio .holiday-card__name {
+  margin-top: 21px;
+  margin-bottom: 32px;
+}
+.holiday-card--onear-wireless .holiday-card__name {
+  margin-bottom: 12px;
+}
 
+.holiday-card__price {
+}
 /* Only at Apple */
 .onlyapple-container {
   background-color: rgba(245, 245, 247, 1);
