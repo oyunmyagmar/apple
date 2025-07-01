@@ -101,33 +101,28 @@ header {
   }
 }
 /* iPhone 16 Pro */
-.iphone16pro-container {
+.iphone16pro {
   background-image: url(images/iphone16pro.png);
   height: 692px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1920px;
-  margin: 0 auto;
-  margin-bottom: 12px;
-}
-.iphone16pro {
   text-align: center;
   padding-top: 55px;
   box-sizing: border-box;
+  margin-bottom: 12px;
+  color: rgba(245, 245, 247, 1);
 }
 .iphone16pro__title {
   font-size: 52px;
   line-height: 60px;
   letter-spacing: -0.28px;
-  color: rgba(245, 245, 247, 1);
   font-weight: 600;
+  margin-bottom: 16px;
 }
 .iphone16pro__subtitle {
   font-size: 24px;
   line-height: 32px;
-  color: rgba(245, 245, 247, 1);
-  margin-top: 16px;
   margin-bottom: 20px;
 }
 .iphone16pro__buttons {
@@ -135,9 +130,8 @@ header {
   gap: 16px;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
 }
-.iphone16pro__button {
+.iphone16pro__buttons .btn {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.37px;
@@ -147,17 +141,58 @@ header {
   border-radius: 22px;
   border: 1px solid transparent;
 }
-.iphone16pro__button:hover {
-  background-color: rgb(0 119 237);
-}
-.iphone16pro__button--bluebordtrans {
+.iphone16pro__buttons .btn--miner {
   background-color: transparent;
   border: 1px solid rgba(41, 151, 255, 1);
   color: rgba(41, 151, 255, 1);
 }
-.iphone16pro__button--bluebordtrans:hover {
-  color: rgba(255, 255, 255, 1);
-  border-color: 1px solid transparent;
+@media (max-width: 768px) {
+  /* iPhone 16 Pro */
+  .iphone16pro {
+    background-image: url(images/iphone16pro.pad.png);
+    height: 650px;
+    padding-top: 58px;
+  }
+  .iphone16pro__title {
+    font-size: 42px;
+    letter-spacing: 0;
+    margin-bottom: 4px;
+  }
+  .iphone16pro__subtitle {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 390px) {
+  /* iPhone 16 Pro */
+  .iphone16pro {
+    background-image: url(images/iphone16pro.mob.png);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 0;
+    padding-bottom: 36px;
+  }
+  .iphone16pro__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+  .iphone16pro__subtitle {
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .iphone16pro__buttons {
+    gap: 12px;
+  }
+  .iphone16pro__buttons .btn {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    padding: 8px 16px;
+    border-radius: 18px;
+  }
 }
 /* iPhone 16 */
 .iphone16-container {
