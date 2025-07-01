@@ -5,7 +5,6 @@ body {
 /* header */
 header {
   background-color: rgba(245, 245, 247, 0.8);
-  max-width: 1920px;
   margin: 0 auto;
   display: flex;
   gap: 24px;
@@ -15,51 +14,51 @@ header {
 .header-logo {
   width: 30px;
   height: 44px;
-  background-image: url(images/header-logo.png);
-  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-nav {
   display: flex;
   gap: 24px;
 }
-.header-nav__item {
+.header-nav .item {
   font-size: 12px;
   line-height: 60px;
   letter-spacing: -0.28px;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.8);
-}
-.header-nav__item:hover {
   color: rgba(0, 0, 0, 1);
 }
-.header-button {
+.header-nav .item:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.header-buttons {
+  display: flex;
+  gap: 24px;
+}
+.header-buttons .btn {
   width: 30px;
   height: 44px;
-  background-size: cover;
   border: none;
   background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.header-button--search {
-  background-image: url(images/header-search.png);
-}
-.header-button--bag {
-  background-image: url(images/header-bag.png);
-}
-.header-button--more {
-  background-image: url(images/header-more.png);
+.header-buttons .btn-menu {
   display: none;
 }
 /* banner */
 .banner {
   background-color: rgba(255, 255, 255, 1);
-  max-width: 1920px;
-  margin: 16px auto;
+  margin: 0 auto;
 }
 .banner__text {
   text-align: center;
   font-size: 14px;
   line-height: 20px;
   color: rgba(29, 29, 31, 1);
+  padding: 16px 0;
 }
 /* iPhone 16 Pro */
 .iphone16pro-container {
@@ -529,25 +528,35 @@ header {
   background-size: auto;
 }
 @media (max-width: 768px) {
+  /* header */
+  header {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .header-logo {
+    width: 49px;
+    height: 48px;
+  }
   .header-nav {
     display: none;
   }
-  .header-button--more {
-    display: block;
-  }
-  header {
-    justify-content: flex-end;
+  .header-buttons {
     gap: 0;
   }
-  .header-logo {
-    margin-right: auto;
+  .header-buttons .btn {
+    width: 48px;
+    height: 48px;
   }
-  .banner {
-    margin: 12px auto;
+  .header-buttons .btn-menu {
+    display: block;
   }
-  .banner__text {
-  }
+  /* banner */
+
+  /* iPhone 16 Pro */
 }
 
 @media (max-width: 390px) {
+  /* banner */
+
+  /* iPhone 16 Pro */
 }

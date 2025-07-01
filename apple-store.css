@@ -67,8 +67,8 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* store head */
-.store-heads-container {
+/* Store */
+.store-container {
   max-width: 1920px;
   background-color: rgba(245, 245, 247, 1);
   background-position: center;
@@ -80,16 +80,14 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.store-heads {
-  display: flex;
-  gap: 32px;
-}
-.store-head {
+
+.heading {
   font-size: 44px;
   line-height: 52.01px;
   font-weight: 700;
+  color: rgba(110, 110, 115, 1);
 }
-.store-head--heading {
+.store-container .heading span {
   background: linear-gradient(
     49deg,
     rgba(0, 144, 247, 1),
@@ -99,10 +97,9 @@ header {
   background-clip: text;
   color: transparent;
   display: inline-block;
+  margin-right: 32px;
 }
-.store-head--subheading {
-  color: rgba(110, 110, 115, 1);
-}
+
 .question {
   display: flex;
   gap: 16px;
