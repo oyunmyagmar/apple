@@ -135,11 +135,13 @@ header {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.37px;
-  color: rgba(255, 255, 255, 1);
   padding: 12px 20px;
-  background-color: rgba(0, 113, 227, 1);
   border-radius: 22px;
   border: 1px solid transparent;
+}
+.iphone16pro__buttons .btn--major {
+  background-color: rgba(0, 113, 227, 1);
+  color: rgba(255, 255, 255, 1);
 }
 .iphone16pro__buttons .btn--miner {
   background-color: transparent;
@@ -195,15 +197,12 @@ header {
   }
 }
 /* iPhone 16 */
-.iphone16-container {
+.iphone16 {
   background-image: url(images/iphone16.png);
   height: 692px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1920px;
-  margin: 0 auto;
-  margin-bottom: 12px;
 }
 .iphone16 {
   text-align: center;
