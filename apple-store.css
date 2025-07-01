@@ -537,8 +537,7 @@ header {
   padding-bottom: 21px;
   box-sizing: border-box;
 }
-.holiday-card-text {
-}
+
 .holiday-card__option {
   font-size: 12px;
   line-height: 16px;
@@ -565,8 +564,6 @@ header {
   margin-bottom: 12px;
 }
 
-.holiday-card__price {
-}
 /* Only at Apple */
 .onlyapple-container {
   background-color: rgba(245, 245, 247, 1);

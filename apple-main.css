@@ -24,7 +24,7 @@ header {
 }
 .header-nav .item {
   font-size: 12px;
-  line-height: 60px;
+  line-height: 44px;
   letter-spacing: -0.28px;
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
@@ -48,10 +48,36 @@ header {
 .header-buttons .btn-menu {
   display: none;
 }
+@media (max-width: 768px) {
+  /* header */
+  header {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .header-logo {
+    width: 49px;
+    height: 48px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-buttons {
+    gap: 0;
+  }
+  .header-buttons .btn {
+    width: 48px;
+    height: 48px;
+  }
+  .header-buttons .btn-menu {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 /* banner */
 .banner {
   background-color: rgba(255, 255, 255, 1);
-  margin: 0 auto;
 }
 .banner__text {
   text-align: center;
@@ -59,6 +85,20 @@ header {
   line-height: 20px;
   color: rgba(29, 29, 31, 1);
   padding: 16px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  /* banner */
+  .banner__text {
+    padding: 16px 162px;
+  }
+}
+@media (max-width: 390px) {
+  /* banner */
+  .banner__text {
+    padding: 6.5px 31px;
+  }
 }
 /* iPhone 16 Pro */
 .iphone16pro-container {
@@ -526,33 +566,6 @@ header {
   background-image: url(images/cont-button-icon.png);
   background-repeat: no-repeat;
   background-size: auto;
-}
-@media (max-width: 768px) {
-  /* header */
-  header {
-    gap: 0;
-    justify-content: space-between;
-  }
-  .header-logo {
-    width: 49px;
-    height: 48px;
-  }
-  .header-nav {
-    display: none;
-  }
-  .header-buttons {
-    gap: 0;
-  }
-  .header-buttons .btn {
-    width: 48px;
-    height: 48px;
-  }
-  .header-buttons .btn-menu {
-    display: block;
-  }
-  /* banner */
-
-  /* iPhone 16 Pro */
 }
 
 @media (max-width: 390px) {
