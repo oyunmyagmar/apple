@@ -143,7 +143,7 @@ header {
   background-color: rgba(0, 113, 227, 1);
   color: rgba(255, 255, 255, 1);
 }
-.iphone16pro__buttons .btn--miner {
+.iphone16pro__buttons .btn--minor {
   background-color: transparent;
   border: 1px solid rgba(41, 151, 255, 1);
   color: rgba(41, 151, 255, 1);
@@ -190,7 +190,6 @@ header {
   }
   .iphone16pro__buttons .btn {
     font-size: 14px;
-    line-height: 20px;
     letter-spacing: 0;
     padding: 8px 16px;
     border-radius: 18px;
@@ -203,23 +202,21 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.iphone16 {
   text-align: center;
   padding-top: 55px;
+  margin-bottom: 12px;
   box-sizing: border-box;
+  color: rgba(245, 245, 247, 1);
 }
 .iphone16__title {
   font-size: 52px;
   line-height: 60px;
   letter-spacing: -0.28px;
-  color: rgba(245, 245, 247, 1);
+  margin-bottom: 16px;
 }
 .iphone16__subtitle {
   font-size: 24px;
   line-height: 32px;
-  color: rgba(245, 245, 247, 1);
-  margin-top: 16px;
   margin-bottom: 20px;
 }
 .iphone16__buttons {
@@ -227,28 +224,24 @@ header {
   gap: 16px;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
 }
-.iphone16__button {
+.iphone16__buttons .btn {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.37px;
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(255, 255, 255, 1);
   border-radius: 22px;
   border: 1px solid rgba(255, 255, 255, 1);
   padding: 12px 20px;
 }
-.iphone16__button:hover {
-  background-color: rgb(245 245 247);
+.iphone16__buttons .btn--major {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
 }
-.iphone16__button--trans {
+.iphone16__buttons .bnt--minor {
   background-color: transparent;
   color: rgba(255, 255, 255, 1);
 }
-.iphone16__button--trans:hover {
-  color: rgba(0, 0, 0, 1);
-}
+
 /* Gift magic */
 .giftmagic-container {
   background-image: url(images/giftmagic.png);
