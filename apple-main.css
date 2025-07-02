@@ -364,6 +364,7 @@ header {
   background-image: url(images/prod-macbookair.png);
   padding-top: 48px;
 }
+.a-product--airpods4,
 .a-product--smallbusiness,
 .a-product--carrierdeals {
   display: none;
@@ -394,23 +395,28 @@ header {
 .a-product--watch .a-product__title,
 .a-product--tradein .a-product__title,
 .a-product--card .a-product__title {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 700;
   margin-bottom: 4px;
   color: rgba(0, 0, 0, 1);
 }
 .a-product--watch .a-product__title::before,
 .a-product--tradein .a-product__title::before,
 .a-product--card .a-product__title::before {
-  width: 26.35px;
   height: 32px;
+  aspect-ratio: 26.35/32;
   content: "";
   background-image: url(images/prod-title-icon.svg);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   display: inline-block;
   margin-right: 7px;
 }
 .a-product--watch .a-product__midtitle {
   font-size: 15px;
-  line-height: 100%;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: 2px;
   color: rgba(0, 0, 0, 1);
@@ -482,8 +488,17 @@ header {
     height: 650px;
     background-image: url(images/prod-ipadair-pad.png);
   }
-  .a-product--airpodspro2 {
-    background-image: url(images/prod-airpodspro2-pad.png);
+  .a-product--airpodspro2,
+  .a-product--card {
+    display: none;
+  }
+  .a-product--airpods4 {
+    display: block;
+    background-image: url(images/prod-airpods4-pad.png);
+    color: rgba(245, 245, 247, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     padding-bottom: 42px;
   }
   .a-product--watch {
@@ -512,9 +527,6 @@ header {
     background-image: url(images/prod-tradein-pad.png);
     padding-top: 46px;
   }
-  .a-product--card {
-    display: none;
-  }
   .a-product__title {
     font-weight: 700;
   }
@@ -522,24 +534,34 @@ header {
     height: 39px;
     margin-bottom: 8px;
   }
-  .a-product--airpodspro2 .a-product__title,
+  .a-product--airpods4 .a-product__title,
   .a-product--macbookair .a-product__title,
   .a-product--smallbusiness .a-product__title,
   .a-product--carrierdeals .a-product__title {
     font-size: 30px;
-    height: 36px;
+    line-height: 36px;
     margin-bottom: 4px;
   }
   .a-product--watch .a-product__title,
   .a-product--tradein .a-product__title {
     font-size: 28px;
-    line-height: 100%;
+    line-height: 34px;
     margin-bottom: 4px;
+  }
+  .a-product--watch .a-product__title::before,
+  .a-product--tradein .a-product__title::before {
+    height: 27px;
+    aspect-ratio: 22/27;
   }
   .a-product--watch .a-product__midtitle {
     font-size: 13px;
+    line-height: 16px;
   }
-  .a-product__subtitle {
+  .a-product--airpods4 .a-product__subtitle,
+  .a-product--macbookair .a-product__subtitle,
+  .a-product--smallbusiness .a-product__subtitle,
+  .a-product--carrierdeals .a-product__subtitle,
+  .a-product--tradein .a-product__subtitle {
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 16px;
@@ -547,11 +569,12 @@ header {
   .a-product--ipadair .a-product__subtitle {
     font-size: 22px;
     line-height: 32px;
-    color: rgba(0, 0, 0, 1);
+    margin-bottom: 16px;
   }
   .a-product--watch .a-product__subtitle {
+    font-size: 18px;
     line-height: 25px;
-    color: rgba(0, 0, 0, 1);
+    margin-bottom: 16px;
   }
   .a-product__buttons {
     gap: 12px;
@@ -561,11 +584,14 @@ header {
   }
   .a-product--ipadair .a-product__buttons .btn {
     font-size: 16px;
+    line-height: 20px;
     padding: 12px 20px;
     border-radius: 22px;
+    letter-spacing: -0.37px;
   }
   .a-product__buttons .btn {
     font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0;
     padding: 8px 16px;
     border-radius: 18px;
@@ -588,9 +614,12 @@ header {
   }
   .a-product--ipadair {
     background-image: url(images/prod-ipadair-mob.png);
+    padding-top: 36px;
+    margin-bottom: 22px;
   }
-  .a-product--airpodspro2 {
-    background-image: url(images/prod-airpodspro2-mob.png);
+  .a-product--airpods4 {
+    background-image: url(images/prod-airpods4-mob.png);
+    padding-bottom: 54px;
   }
   .a-product--watch {
     background-image: url(images/prod-watch-mob.png);
@@ -600,12 +629,69 @@ header {
   }
   .a-product--smallbusiness {
     background-image: url(images/prod-smallbusiness-mob.png);
+    padding-top: 47px;
   }
   .a-product--carrierdeals {
     background-image: url(images/prod-carrierdeals-mob.png);
+    padding-bottom: 47px;
   }
   .a-product--tradein {
     background-image: url(images/prod-tradein-mob.png);
+    padding-top: 51px;
+  }
+  .a-product--ipadair .a-product__title {
+    height: 41.86px;
+  }
+  .a-product--airpods4 .a-product__title {
+    font-size: 30px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+  .a-product--ipadair .a-product__subtitle {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+  .a-product--airpods4 .a-product__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .a-product--watch .a-product__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 16px;
+  }
+  .a-product--macbookair .a-product__subtitle,
+  .a-product--smallbusiness .a-product__subtitle,
+  .a-product--carrierdeals .a-product__subtitle,
+  .a-product--tradein .a-product__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+  .a-product--ipadair .a-product__buttons {
+    gap: 12px;
+  }
+  .a-product--ipadair .a-product__buttons .btn {
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 18px;
+    padding: 8px 16px;
+    letter-spacing: 0;
+    border: 1px solid transparent;
+  }
+  .a-product--ipadair .a-product__buttons .btn--minor {
+    background-color: transparent;
+    color: rgba(41, 151, 255, 1);
+    border: 1px solid rgba(41, 151, 255, 1);
+  }
+  .a-product__aisub {
+    font-size: 14px;
+    line-height: 18px;
+    bottom: 36px;
+    left: 0;
+    right: 0;
   }
 }
 /* endees urgeljluulej */
