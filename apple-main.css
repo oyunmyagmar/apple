@@ -350,10 +350,10 @@ header {
   padding-top: 58px;
   color: rgba(29, 29, 31, 1);
   box-sizing: border-box;
-  position: relative;
 }
 .a-product--ipadair {
   background-image: url(images/prod-ipadair.png);
+  position: relative;
 }
 .a-product--airpodspro2 {
   background-image: url(images/prod-airpodspro2.png);
@@ -470,7 +470,8 @@ header {
   font-weight: 500;
   position: absolute;
   bottom: 53px;
-  left: 386px;
+  left: 0;
+  right: 0;
   background: linear-gradient(
     94deg,
     rgba(0, 144, 247, 1),
@@ -578,6 +579,13 @@ header {
     letter-spacing: 0;
     padding: 8px 16px;
     border-radius: 18px;
+  }
+  .a-product__aisub {
+    font-size: 20px;
+    line-height: 24px;
+    bottom: 62px;
+    left: 0;
+    right: 0;
   }
 }
 @media (max-width: 390px) {
