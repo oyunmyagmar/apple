@@ -350,6 +350,7 @@ header {
   padding-top: 58px;
   color: rgba(29, 29, 31, 1);
   box-sizing: border-box;
+  position: relative;
 }
 .a-product--ipadair {
   background-image: url(images/prod-ipadair.png);
@@ -362,6 +363,7 @@ header {
 }
 .a-product--macbookair {
   background-image: url(images/prod-macbookair.png);
+  padding-top: 48px;
 }
 .a-product--smallbusiness,
 .a-product--carrierdeals {
@@ -466,7 +468,9 @@ header {
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
-  margin-top: 324px;
+  position: absolute;
+  bottom: 53px;
+  left: 386px;
   background: linear-gradient(
     94deg,
     rgba(0, 144, 247, 1),
@@ -479,15 +483,133 @@ header {
   display: inline-block;
 }
 @media (max-width: 768px) {
+  .a-product {
+    height: 490px;
+  }
   .a-product--ipadair {
     width: 100%;
+    height: 650px;
+    background-image: url(images/prod-ipadair-pad.png);
   }
-  .a-product--smallbusiness,
+  .a-product--airpodspro2 {
+    background-image: url(images/prod-airpodspro2-pad.png);
+    padding-bottom: 42px;
+  }
+  .a-product--watch {
+    background-image: url(images/prod-watch-pad.png);
+    padding-top: 46px;
+  }
+  .a-product--macbookair {
+    background-image: url(images/prod-macbook-pad.png);
+    padding-top: 42px;
+  }
+  .a-product--smallbusiness {
+    display: block;
+    background-image: url(images/prod-smallbusiness-pad.png);
+    padding-top: 42px;
+  }
   .a-product--carrierdeals {
     display: block;
+    background-image: url(images/prod-carrierdeals-pad.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 0;
+    padding-bottom: 42px;
+  }
+  .a-product--tradein {
+    background-image: url(images/prod-tradein-pad.png);
+    padding-top: 46px;
+  }
+  .a-product--card {
+    display: none;
+  }
+  .a-product__title {
+    font-weight: 700;
+  }
+  .a-product--ipadair .a-product__title {
+    height: 39px;
+    margin-bottom: 8px;
+  }
+  .a-product--airpodspro2 .a-product__title,
+  .a-product--macbookair .a-product__title,
+  .a-product--smallbusiness .a-product__title,
+  .a-product--carrierdeals .a-product__title {
+    font-size: 30px;
+    height: 36px;
+    margin-bottom: 4px;
+  }
+  .a-product--watch .a-product__title,
+  .a-product--tradein .a-product__title {
+    font-size: 28px;
+    line-height: 100%;
+    margin-bottom: 4px;
+  }
+  .a-product--watch .a-product__midtitle {
+    font-size: 13px;
+  }
+  .a-product__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+  .a-product--ipadair .a-product__subtitle {
+    font-size: 22px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 1);
+  }
+  .a-product--watch .a-product__subtitle {
+    line-height: 25px;
+    color: rgba(0, 0, 0, 1);
+  }
+  .a-product__buttons {
+    gap: 12px;
+  }
+  .a-product--ipadair .a-product__buttons {
+    gap: 16px;
+  }
+  .a-product--ipadair .a-product__buttons .btn {
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 22px;
+  }
+  .a-product__buttons .btn {
+    font-size: 14px;
+    letter-spacing: 0;
+    padding: 8px 16px;
+    border-radius: 18px;
   }
 }
-
+@media (max-width: 390px) {
+  .a-products {
+    padding: 0;
+  }
+  .a-product {
+    width: 100%;
+    height: 500px;
+  }
+  .a-product--ipadair {
+    background-image: url(images/prod-ipadair-mob.png);
+  }
+  .a-product--airpodspro2 {
+    background-image: url(images/prod-airpodspro2-mob.png);
+  }
+  .a-product--watch {
+    background-image: url(images/prod-watch-mob.png);
+  }
+  .a-product--macbookair {
+    background-image: url(images/prod-macbook-mob.png);
+  }
+  .a-product--smallbusiness {
+    background-image: url(images/prod-smallbusiness-mob.png);
+  }
+  .a-product--carrierdeals {
+    background-image: url(images/prod-carrierdeals-mob.png);
+  }
+  .a-product--tradein {
+    background-image: url(images/prod-tradein-mob.png);
+  }
+}
 /* endees urgeljluulej */
 /* endees urgeljluulej */
 /* series nemehhhhhh */
