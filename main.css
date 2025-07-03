@@ -974,3 +974,30 @@ header {
     margin: 16px;
   }
 }
+
+/* apple store page */
+/* apple store page */
+main.store {
+  background-color: rgba(245, 245, 247, 1);
+  min-height: 100vh;
+}
+/* banner */
+.banner {
+  padding: 4px 0;
+}
+/* The latest */
+.latest-cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-left: 140px;
+}
+.latest-card {
+  width: 480px;
+  height: 500px;
+  border-radius: 18px;
+  border: none;
+  background-color: brown;
+  flex-shrink: 0;
+}
