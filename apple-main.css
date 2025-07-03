@@ -858,7 +858,6 @@ header {
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-bottom: 56px;
   scroll-snap-type: x mandatory;
 }
 .acontent-slides {
@@ -869,84 +868,109 @@ header {
 .acontent-slide {
   width: 417px;
   height: 236px;
-  background-color: blueviolet;
   scroll-snap-align: center;
-}
-
-/* endees urgeljluulej */
-/* endees urgeljluulej */
-/* series nemehhhhhh */
-/* endees urgeljluulej */
-/* apple content scroll */
-.content-scroller {
-  max-width: 1920px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-}
-.content-slides-container {
-  width: 100%;
-  overflow-x: scroll;
-}
-.content-slides {
-  width: 3015px;
-  display: flex;
-  gap: 16px;
-}
-.content-slide {
-  width: 417px;
-  height: 236px;
   position: relative;
 }
-.content-slide__img {
+.acontent-slide__img {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  aspect-ratio: 417/236;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.content-slide__title {
-  position: absolute;
+.acont1,
+.acont2,
+.acont3,
+.acont4,
+.acont5 {
+  aspect-ratio: 417/236;
+}
+.acont6,
+.acont7 {
+  aspect-ratio: 238/160;
+}
+.acontent-slide__title {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.22px;
   font-weight: 600;
   color: rgba(255, 255, 255, 1);
-  bottom: 20px;
-  left: 15px;
+  position: absolute;
+  bottom: 0;
 }
-.content-slide__title--randb {
-  top: 109px;
-  left: 226px;
+.acont1 .acontent-slide__title,
+.acont3 .acontent-slide__title,
+.acont4 .acontent-slide__title,
+.acont5 .acontent-slide__title,
+.acont6 .acontent-slide__title,
+.acont7 .acontent-slide__title {
+  padding: 20px 15px;
 }
-.content-button {
+.acont2 .acontent-slide__title {
+  padding: 109px 0;
+  padding-left: 226px;
+}
+/* button-g position-oor avah */
+/* button-g position-oor avah */
+/* button-g position-oor avah */
+.acontent-button {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: none;
   background-color: rgba(210, 210, 215, 1);
+  border: none;
   margin: 16px;
   display: flex;
-  justify-self: flex-end;
   align-items: center;
 }
-.content-button::after {
+.acontent-button::after {
   content: "";
-  display: inline-block;
   width: 12px;
   height: 12px;
-  background-image: url(images/cont-button-icon.png);
+  background-image: url(images/acont-btn-icon.svg);
+  display: inline-block;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-position: center;
 }
-
+/* button-g position-oor avah */
+/* button-g position-oor avah */
+/* button-g position-oor avah */
+@media (max-width: 768px) {
+  /* a-content scroll */
+  .acontent-slides {
+    width: 2098px;
+  }
+  .acontent-slide {
+    width: 286px;
+    height: 161px;
+  }
+  .acontent-slide__title {
+    color: rgba(29, 29, 31, 1);
+    font-weight: 700;
+  }
+  .acontent-button {
+    margin-bottom: 28px;
+    margin-right: 18px;
+  }
+}
 @media (max-width: 390px) {
-  /* banner */
-
-  /* iPhone 16 Pro */
+  /* a-content scroll */
+  .acontent-slides {
+    gap: 6px;
+  }
+  .acontent-slide {
+    width: 238px;
+    height: 134px;
+  }
+  .acontent-slide__title {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .acontent-button {
+    margin: 16px;
+  }
 }
