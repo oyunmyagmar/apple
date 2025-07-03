@@ -2,6 +2,10 @@ body {
   margin: 0;
   font-family: "Inter";
 }
+main.home {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 /* header */
 header {
   background-color: rgba(245, 245, 247, 0.8);
@@ -320,6 +324,7 @@ header {
   color: rgba(255, 255, 255, 1);
 }
 @media (max-width: 768px) {
+  /* Gift */
   .giftmagic {
     display: none;
   }
@@ -480,6 +485,7 @@ header {
   right: 0;
 }
 @media (max-width: 768px) {
+  /* Apple Products */
   .a-product {
     height: 490px;
   }
@@ -605,6 +611,7 @@ header {
   }
 }
 @media (max-width: 390px) {
+  /* Apple Products */
   .a-products {
     padding: 0;
   }
@@ -788,6 +795,7 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
 }
 @media (max-width: 768px) {
+  /* a-tv scroll */
   .atv-slide {
     width: 689px;
     height: 368px;
@@ -808,6 +816,7 @@ header {
   }
 }
 @media (max-width: 390px) {
+  /* a-tv scroll */
   .atv-slide {
     width: 274px;
     height: 495px;
@@ -833,7 +842,6 @@ header {
   .amov4 img:nth-child(2) {
     display: block;
   }
-
   .atv-slide__img-mob {
     aspect-ratio: 274/495;
   }
@@ -845,21 +853,30 @@ header {
     margin-bottom: 26px;
   }
 }
+/* a-content scroll */
+.acontent-scroller {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-bottom: 56px;
+  scroll-snap-type: x mandatory;
+}
+.acontent-slides {
+  width: 3015px;
+  display: flex;
+  gap: 16px;
+}
+.acontent-slide {
+  width: 417px;
+  height: 236px;
+  background-color: blueviolet;
+  scroll-snap-align: center;
+}
 
 /* endees urgeljluulej */
 /* endees urgeljluulej */
 /* series nemehhhhhh */
 /* endees urgeljluulej */
-.tv-slide__button {
-  font-size: 17px;
-  letter-spacing: -0.37px;
-  color: rgba(0, 0, 0, 1);
-  padding: 12px 20px;
-  background-color: rgba(245, 245, 247, 1);
-  border-radius: 22px;
-  border: none;
-}
-
 /* apple content scroll */
 .content-scroller {
   max-width: 1920px;
