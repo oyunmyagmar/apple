@@ -694,6 +694,79 @@ header {
     right: 0;
   }
 }
+.atv-scroller {
+  display: flex;
+  gap: 16px;
+  overflow-x: scroll;
+  margin-top: 12px;
+  scroll-snap-type: x mandatory;
+  overflow-y: hidden;
+}
+.atv-slide {
+  width: 1250px;
+  height: 668px;
+  background-color: blue;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  position: relative;
+}
+.atv-slide__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.amov1 .atv-slide__img,
+.amov2 .atv-slide__img,
+.amov3 .atv-slide__img {
+  aspect-ratio: 1250/668;
+}
+.amov4 .atv-slide__img,
+.amov5 .atv-slide__img {
+  aspect-ratio: 768/368;
+}
+
+.atv-slide__text {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  bottom: 58px;
+  left: 70px;
+}
+.atv-slide__text .btn {
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  padding: 12px 20px;
+  background-color: rgba(245, 245, 247, 1);
+  color: rgba(0, 0, 0, 1);
+  border-radius: 22px;
+  border: none;
+}
+.atv-slide__text .genre {
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+.atv-slide__text .genre span {
+  font-weight: 700;
+}
+.dots-wrapper {
+  display: flex;
+  gap: 14px;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.42);
+}
 /* endees urgeljluulej */
 /* endees urgeljluulej */
 /* series nemehhhhhh */
