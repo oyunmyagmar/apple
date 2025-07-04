@@ -878,6 +878,7 @@ header {
   left: 0;
   right: 0;
   object-fit: cover;
+  aspect-ratio: 417/236;
   width: 100%;
   height: 100%;
 }
@@ -890,7 +891,7 @@ header {
 }
 .acont6,
 .acont7 {
-  aspect-ratio: 238/160;
+  aspect-ratio: 238/134;
 }
 .acontent-slide__title {
   font-size: 14px;
@@ -898,10 +899,13 @@ header {
   letter-spacing: -0.22px;
   font-weight: 600;
   color: rgba(255, 255, 255, 1);
+  width: 223.7px;
   position: absolute;
   bottom: 0;
 }
-.acont1 .acontent-slide__title,
+.acont1 .acontent-slide__title {
+  padding: 10px 15px;
+}
 .acont3 .acontent-slide__title,
 .acont4 .acontent-slide__title,
 .acont5 .acontent-slide__title,
@@ -913,9 +917,6 @@ header {
   padding: 109px 0;
   padding-left: 226px;
 }
-/* button-g position-oor avah */
-/* button-g position-oor avah */
-/* button-g position-oor avah */
 .acontent-button {
   width: 24px;
   height: 24px;
@@ -925,6 +926,7 @@ header {
   margin: 16px;
   display: flex;
   align-items: center;
+  justify-self: end;
 }
 .acontent-button::after {
   content: "";
@@ -935,9 +937,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* button-g position-oor avah */
-/* button-g position-oor avah */
-/* button-g position-oor avah */
 @media (max-width: 768px) {
   /* a-content scroll */
   .acontent-slides {
@@ -946,10 +945,22 @@ header {
   .acontent-slide {
     width: 286px;
     height: 161px;
+    margin-bottom: 33px;
+  }
+  .acont1 .acontent-slide__title,
+  .acont2 .acontent-slide__title,
+  .acont3 .acontent-slide__title,
+  .acont4 .acontent-slide__title,
+  .acont5 .acontent-slide__title,
+  .acont6 .acontent-slide__title,
+  .acont7 .acontent-slide__title {
+    padding: 0;
   }
   .acontent-slide__title {
+    position: absolute;
     color: rgba(29, 29, 31, 1);
-    font-weight: 700;
+    width: 100%;
+    bottom: -33px;
   }
   .acontent-button {
     margin-bottom: 28px;
@@ -959,16 +970,21 @@ header {
 @media (max-width: 390px) {
   /* a-content scroll */
   .acontent-slides {
+    width: 1502px;
+  }
+  .acontent-slides {
     gap: 6px;
   }
   .acontent-slide {
     width: 238px;
     height: 134px;
+    margin-bottom: 26px;
   }
   .acontent-slide__title {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0;
+    bottom: -26px;
   }
   .acontent-button {
     margin: 16px;
