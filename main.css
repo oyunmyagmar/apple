@@ -1192,6 +1192,7 @@ main.store {
   overflow-x: scroll;
   overflow-y: hidden;
   padding-left: 140px;
+  color: rgba(29, 29, 31, 1);
 }
 .personalization-card1st {
   width: 400px;
@@ -1222,7 +1223,6 @@ main.store {
   line-height: 32px;
   letter-spacing: 0.2px;
   font-weight: 700;
-  color: rgba(29, 29, 31, 1);
 }
 .personalization-card {
   width: 313px;
@@ -1251,9 +1251,6 @@ main.store {
 .personalization-card__colorbox .color {
   aspect-ratio: 12/12;
 }
-.personalization-card__text {
-  color: rgba(29, 29, 31, 1);
-}
 .airpods-pro2 .personalization-card__text,
 .airpods-4 .personalization-card__text,
 .pencil-pro .personalization-card__text {
@@ -1280,3 +1277,143 @@ main.store {
   line-height: 18px;
 }
 /* Holiday Picks */
+.holiday-container {
+  margin-bottom: 60px;
+}
+.holiday-cards-scroller {
+  display: flex;
+  gap: 20px;
+  padding-left: 140px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  color: rgba(29, 29, 31, 1);
+}
+.holiday-card1st {
+  width: 400px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.holiday-card1st__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  aspect-ratio: 4/5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.holiday-card1st__slogan {
+  position: absolute;
+  top: 54px;
+  left: 30px;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+}
+.holiday-card {
+  width: 313px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  padding: 0 28px;
+  padding-top: 71px;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+}
+.holiday-card__img {
+  aspect-ratio: 23/23;
+  padding: 0 13.5px;
+}
+.holiday-card__colorbox {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 21px;
+  box-sizing: border-box;
+}
+.holiday-card__colorbox .color {
+  aspect-ratio: 12/12;
+  width: 12px;
+  height: 12px;
+}
+.holiday-card__text {
+}
+.h-card-t__addinfo {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: rgba(182, 68, 0, 1);
+  margin-bottom: 6px;
+}
+.homepod-mini .holiday-card__text,
+.smart-folio .holiday-card__text {
+  margin-top: 21px;
+}
+.h-card-t__name {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.homepod-mini .h-card-t__name {
+  margin-bottom: 52px;
+}
+.wireless-headphones .h-card-t__name {
+  margin-bottom: 12px;
+}
+.h-card-t__price {
+  font-size: 14px;
+  line-height: 18px;
+}
+/* Only at Apple */
+.onlyapple-container {
+}
+.onlyapple-cards-scroller {
+  display: flex;
+  gap: 20px;
+  padding-left: 140px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  color: rgba(29, 29, 31, 1);
+}
+.onlyapple-card {
+  width: 480px;
+  height: 500px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 1);
+  flex-shrink: 0;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+}
+.onlyapple-card__img {
+}
+.onlyapple-card__title {
+}
+.onlyapple-card__description {
+}
+.onlyapple-card2nd {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.onlyapple-card2nd__inbox {
+  width: 313px;
+  height: 240px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 1);
+  flex-shrink: 0;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+}
