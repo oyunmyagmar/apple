@@ -1145,6 +1145,7 @@ main.store {
   position: absolute;
 }
 .latest-card-addinfo {
+  color: rgba(182, 68, 0, 1);
 }
 .latest-card-name {
 }
