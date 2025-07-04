@@ -1018,6 +1018,7 @@ main.store {
   justify-content: space-between;
   padding: 0 140px;
   margin-bottom: 80px;
+  box-sizing: border-box;
 }
 .store__heading {
   font-size: 44px;
@@ -1099,8 +1100,7 @@ main.store {
 }
 /* The latest */
 .latest-container {
-  padding-left: 140px;
-  /* margin-bottom: 60px; */
+  margin-bottom: 60px;
 }
 .container-heading {
   font-size: 24px;
@@ -1108,8 +1108,9 @@ main.store {
   font-weight: 700;
   color: rgba(110, 110, 115, 1);
   margin-bottom: 24px;
+  padding-left: 140px;
 }
-.container-heading span {
+.container-heading > span {
   background: linear-gradient(
     108deg,
     rgba(0, 144, 247, 1),
@@ -1126,13 +1127,14 @@ main.store {
   gap: 20px;
   overflow-x: scroll;
   overflow-y: hidden;
+  padding-left: 140px;
 }
 .latest-card {
   width: 480px;
   height: 500px;
   border-radius: 18px;
   border: none;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
   flex-shrink: 0;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   position: relative;
@@ -1140,14 +1142,141 @@ main.store {
 .latest-card__img {
   border-radius: 18px;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  aspect-ratio: 48/50;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .latest-card__text {
   position: absolute;
+  top: 30px;
+  left: 30px;
+  color: rgba(29, 29, 31, 1);
 }
-.latest-card-addinfo {
+.watch-series10 .latest-card__text {
+  top: 54px;
+}
+.l-card-t__addinfo {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
   color: rgba(182, 68, 0, 1);
+  margin-bottom: 9px;
 }
-.latest-card-name {
+.l-card-t__addinfo > sup {
+  font-size: 8px;
+  line-height: 10px;
 }
-.latest-card-price {
+.l-card-t__name {
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
+.l-card-t__price {
+  font-size: 18px;
+  line-height: 20px;
+}
+/* Personalization */
+.personalization-container {
+  margin-bottom: 60px;
+}
+.personalization-cards-scroller {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-left: 140px;
+}
+.personalization-card1st {
+  width: 400px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.personalization-card1st__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: 18px;
+  width: 100%;
+  height: 100%;
+}
+.personalization-card1st__slogan {
+  position: absolute;
+  top: 53px;
+  left: 30px;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  color: rgba(29, 29, 31, 1);
+}
+.personalization-card {
+  width: 313px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  padding: 0 28px;
+  padding-top: 71px;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+}
+.personalization-card__img {
+  aspect-ratio: 23/23;
+  padding: 0 13.5px;
+}
+.personalization-card__colorbox {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 21px;
+  box-sizing: border-box;
+}
+.personalization-card__colorbox .color {
+  aspect-ratio: 12/12;
+}
+.personalization-card__text {
+  color: rgba(29, 29, 31, 1);
+}
+.airpods-pro2 .personalization-card__text,
+.airpods-4 .personalization-card__text,
+.pencil-pro .personalization-card__text {
+  margin-top: 58px;
+}
+.p-card-t__addinfo {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: rgba(182, 68, 0, 1);
+  margin-bottom: 6px;
+}
+.p-card-t__name {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 52px;
+}
+.airpods-4 .p-card-t__name {
+  margin-bottom: 32px;
+}
+.p-card-t__price {
+  font-size: 14px;
+  line-height: 18px;
+}
+/* Holiday Picks */
