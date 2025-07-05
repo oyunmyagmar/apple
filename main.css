@@ -1411,6 +1411,8 @@ main.store {
 .onlyapple-card__text {
   font-weight: 700;
   position: absolute;
+  left: 30px;
+  top: 50px;
 }
 .o-card-t__description {
   font-size: 26px;
@@ -1422,14 +1424,9 @@ main.store {
   color: rgba(110, 110, 115, 1);
   margin-bottom: 9px;
 }
-.get-gifts .onlyapple-card__text {
-  top: 50px;
-  left: 30px;
-}
 .trade-in .onlyapple-card__text,
 .specialist .onlyapple-card__text {
   top: 31px;
-  left: 30px;
 }
 .onlyapple-card2nd {
   width: 646px;
@@ -1461,6 +1458,7 @@ main.store {
 }
 /* The Apple Experience */
 .experience-container {
+  margin-bottom: 60px;
 }
 .experience-cards-scroller {
   display: flex;
@@ -1491,10 +1489,131 @@ main.store {
   border-radius: 18px;
 }
 .experience-card__text {
+  position: absolute;
+  color: rgba(29, 29, 31, 1);
+  top: 32px;
+  left: 30px;
+}
+.services-subscription .experience-card__text {
+  top: 52px;
 }
 .e-card-t__title {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: rgba(110, 110, 115, 1);
+  margin-bottom: 8px;
+}
+.free-tv .e-card-t__title {
+  color: rgba(245, 245, 247, 1);
 }
 .e-card-t__description {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.free-tv .e-card-t__description {
+  color: rgba(255, 255, 255, 1);
 }
 .e-card-t__addinfo {
+  font-size: 17px;
+  line-height: 20px;
+}
+/* Special Savings */
+.savings-container {
+  margin-bottom: 60px;
+}
+.savings-cards-scroller {
+  display: flex;
+  gap: 20px;
+  padding-left: 140px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  color: rgba(29, 29, 31, 1);
+}
+.savings-card {
+  width: 400px;
+  height: 500px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.savings-card__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  aspect-ratio: 4/5;
+  border-radius: 18px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.savings-card__text {
+  position: absolute;
+  top: 31px;
+  left: 30px;
+}
+.s-card-t__title {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: rgba(110, 110, 115, 1);
+  margin-bottom: 7px;
+}
+.business .s-card-t__title {
+  color: rgba(134, 134, 139, 1);
+}
+.s-card-t__description {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.business .s-card-t__description {
+  color: rgba(255, 255, 255, 1);
+}
+.s-card-t__addinfo {
+  font-size: 17px;
+  line-height: 20px;
+}
+/* Quick Links */
+.links-container {
+  padding-left: 140px;
+  color: rgba(29, 29, 31, 1);
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+.links__heading {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.links__buttons a.btn {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  border: 1px solid rgba(29, 29, 31, 1);
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: transparent;
+  color: rgba(29, 29, 31, 1);
+  margin-right: 12px;
+}
+.links__buttons a.btn::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-image: url(images-store/links-vector.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin-left: 8px;
 }
