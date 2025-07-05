@@ -16,6 +16,9 @@ header {
   justify-content: center;
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 .header-logo {
   width: 30px;
@@ -633,12 +636,10 @@ header {
     padding: 8px 16px;
     border-radius: 18px;
   }
-  .a-product__aisub {
+  .a-product--ipadair .a-product__aisub {
     font-size: 20px;
     line-height: 24px;
-    bottom: 62px;
-    left: 0;
-    right: 0;
+    margin-top: 367px;
   }
 }
 @media (max-width: 390px) {
@@ -717,19 +718,11 @@ header {
     border-radius: 18px;
     padding: 8px 16px;
     letter-spacing: 0;
-    border: 1px solid transparent;
   }
-  .a-product--ipadair .a-product__buttons .btn--minor {
-    background-color: transparent;
-    color: rgba(41, 151, 255, 1);
-    border: 1px solid rgba(41, 151, 255, 1);
-  }
-  .a-product__aisub {
+  .a-product--ipadair .a-product__aisub {
     font-size: 14px;
     line-height: 18px;
-    bottom: 36px;
-    left: 0;
-    right: 0;
+    margin-top: 276.14px;
   }
 }
 /* a-tv scroll */
@@ -752,9 +745,9 @@ header {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite; */
 }
-.atv-slide:hover > .atv-slide__text {
+/* .atv-slide:hover > .atv-slide__text {
   opacity: 1;
-}
+} */
 /* @keyframes slideLeft {
   0% {
     right: 0;
@@ -815,19 +808,19 @@ header {
   position: absolute;
   bottom: 58px;
   left: 70px;
-  animation-name: slideUp;
+  /* animation-name: slideUp;
   animation-duration: 3s;
-  /* animation-iteration-count: infinite; */
-  opacity: 0;
+  animation-iteration-count: infinite;
+  opacity: 0; */
 }
-@keyframes slideUp {
+/* @keyframes slideUp {
   0% {
     bottom: -58px;
   }
   100% {
     bottom: 58px;
   }
-}
+} */
 .atv-slide__text .btn {
   font-size: 17px;
   line-height: 20px;
@@ -945,19 +938,19 @@ header {
   height: 236px;
   scroll-snap-align: center;
   position: relative;
-  animation-name: contentslide;
+  /* animation-name: contentslide;
   animation-duration: 20s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
-@keyframes contentslide {
+/* @keyframes contentslide {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-100%);
   }
-}
+} */
 .acontent-slide__img {
   position: absolute;
   top: 0;
@@ -1078,9 +1071,7 @@ header {
   }
 }
 
-/* apple store page */
-/* apple store page */
-/* apple store page */
+/* apple store page */ /* apple store page */ /* apple store page */
 main.store {
   background-color: rgba(245, 245, 247, 1);
   min-height: 100vh;
@@ -1147,11 +1138,25 @@ main.store {
 .store-question__text .content {
   font-size: 14px;
   line-height: 20px;
+  color: rgba(0, 102, 204, 1);
+  text-decoration: none;
+}
+.store-question__text .content::after {
+  content: "";
+  width: 6px;
+  height: 7.01px;
+  background-image: url(images-store/storeQ-vector.svg);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 4px;
+}
+.store-question__text .content:hover {
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-thickness: 0%;
-  text-decoration-skip-ink: true;
-  color: rgba(0, 102, 204, 1);
+  text-decoration-skip-ink: auto;
 }
 .qbox1 {
   margin-bottom: 16px;
@@ -1174,6 +1179,7 @@ main.store {
   flex-shrink: 0;
   padding: 16px 8px;
   text-align: center;
+  box-sizing: border-box;
 }
 .product-category .category__img {
   margin-bottom: 16px;
@@ -1184,6 +1190,10 @@ main.store {
   line-height: 20px;
   font-weight: 700;
   color: rgba(29, 29, 31, 1);
+}
+.product-category .category__title:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 /* The latest */
 .latest-container {
@@ -1225,6 +1235,11 @@ main.store {
   flex-shrink: 0;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   position: relative;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.latest-card:hover {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.16);
+  transform: scale3d(1.01, 1.01, 1.01);
 }
 .latest-card__img {
   border-radius: 18px;
@@ -1289,6 +1304,11 @@ main.store {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
   position: relative;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.personalization-card1st:hover {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.16);
+  transform: scale3d(1.01, 1.01, 1.01);
 }
 .personalization-card1st__img {
   position: absolute;
@@ -1322,6 +1342,11 @@ main.store {
   padding-top: 71px;
   padding-bottom: 32px;
   box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.personalization-card:hover {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.16);
+  transform: scale3d(1.01, 1.01, 1.01);
 }
 .personalization-card__img {
   aspect-ratio: 23/23;
@@ -1383,6 +1408,11 @@ main.store {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
   position: relative;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.holiday-card1st:hover {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.16);
+  transform: scale3d(1.01, 1.01, 1.01);
 }
 .holiday-card1st__img {
   position: absolute;
@@ -1416,6 +1446,11 @@ main.store {
   padding-top: 71px;
   padding-bottom: 32px;
   box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.holiday-card:hover {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.16);
+  transform: scale3d(1.01, 1.01, 1.01);
 }
 .holiday-card__img {
   aspect-ratio: 23/23;
@@ -1481,6 +1516,11 @@ main.store {
   flex-shrink: 0;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   position: relative;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.onlyapple-card:hover {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.16);
+  transform: scale3d(1.01, 1.01, 1.01);
 }
 .onlyapple-card__img {
   position: absolute;
@@ -1560,6 +1600,11 @@ main.store {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
   position: relative;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.experience-card:hover {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.16);
+  transform: scale3d(1.01, 1.01, 1.01);
 }
 .experience-card__img {
   position: absolute;
@@ -1625,6 +1670,11 @@ main.store {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
   position: relative;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.savings-card:hover {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.16);
+  transform: scale3d(1.01, 1.01, 1.01);
 }
 .savings-card__img {
   position: absolute;
@@ -1691,6 +1741,12 @@ main.store {
   color: rgba(29, 29, 31, 1);
   margin-right: 12px;
 }
+.links__buttons a.btn:hover {
+  background-color: rgba(29, 29, 31, 1);
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+}
+
 .links__buttons a.btn::after {
   content: "";
   width: 8px;
