@@ -33,6 +33,9 @@ header {
   line-height: 44px;
   letter-spacing: -0.28px;
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+.header-nav .item:hover {
   color: rgba(0, 0, 0, 1);
 }
 .header-buttons {
@@ -140,15 +143,24 @@ header {
   padding: 12px 20px;
   border-radius: 22px;
   border: 1px solid transparent;
+  box-sizing: border-box;
 }
 .iphone16pro__buttons .btn--major {
   background-color: rgba(0, 113, 227, 1);
   color: rgba(255, 255, 255, 1);
 }
+.iphone16pro__buttons .btn--major:hover {
+  background-color: rgb(0 119 237);
+}
 .iphone16pro__buttons .btn--minor {
   background-color: transparent;
   border: 1px solid rgba(41, 151, 255, 1);
   color: rgba(41, 151, 255, 1);
+}
+.iphone16pro__buttons .btn--minor:hover {
+  background-color: rgb(0 119 237);
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgb(0 119 237);
 }
 @media (max-width: 768px) {
   /* iPhone 16 Pro */
@@ -235,12 +247,19 @@ header {
   padding: 12px 20px;
 }
 .iphone16__buttons .btn--major {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(245 245 247);
   color: rgba(0, 0, 0, 1);
+}
+.iphone16__buttons .btn--major:hover {
+  background-color: rgba(255, 255, 255, 1);
 }
 .iphone16__buttons .btn--minor {
   background-color: transparent;
   color: rgba(255, 255, 255, 1);
+}
+.iphone16__buttons .btn--minor:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
 }
 @media (max-width: 768px) {
   /* iPhone 16 */
@@ -323,6 +342,9 @@ header {
   background-color: rgba(0, 113, 227, 1);
   color: rgba(255, 255, 255, 1);
 }
+.giftmagic__buttons .btn:hover {
+  background-color: rgb(0 119 237);
+}
 @media (max-width: 768px) {
   /* Gift */
   .giftmagic {
@@ -397,6 +419,9 @@ header {
 .a-product--macbookair .a-product__title {
   margin-bottom: 2px;
 }
+.a-product--watch .a-product__title {
+  text-transform: uppercase;
+}
 .a-product--watch .a-product__title,
 .a-product--tradein .a-product__title,
 .a-product--card .a-product__title {
@@ -409,15 +434,16 @@ header {
 .a-product--watch .a-product__title::before,
 .a-product--tradein .a-product__title::before,
 .a-product--card .a-product__title::before {
-  height: 32px;
-  aspect-ratio: 26.35/32;
   content: "";
+  width: 26.35px;
+  height: 30px;
+  aspect-ratio: 26.35/32;
   background-image: url(images/prod-title-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
-  margin-right: 7px;
+  margin-right: 8px;
 }
 .a-product--watch .a-product__midtitle {
   font-size: 15px;
@@ -460,10 +486,18 @@ header {
   background-color: rgba(0, 113, 227, 1);
   color: rgba(255, 255, 255, 1);
 }
+.a-product__buttons .btn--major:hover {
+  background-color: rgb(0 119 237);
+}
 .a-product__buttons .btn--minor {
   background-color: transparent;
   color: rgba(41, 151, 255, 1);
   border: 1px solid rgba(41, 151, 255, 1);
+}
+.a-product__buttons .btn--minor:hover {
+  background-color: rgb(0 119 237);
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgb(0 119 237);
 }
 .a-product--ipadair .a-product__aisub {
   font-size: 14px;
@@ -479,10 +513,7 @@ header {
   background-clip: text;
   color: transparent;
   display: inline-block;
-  position: absolute;
-  bottom: 53px;
-  left: 0;
-  right: 0;
+  margin-top: 324px;
 }
 @media (max-width: 768px) {
   /* Apple Products */
@@ -716,7 +747,36 @@ header {
   flex-shrink: 0;
   scroll-snap-align: center;
   position: relative;
+  /* animation-name: slideLeft;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; */
 }
+.atv-slide:hover > .atv-slide__text {
+  opacity: 1;
+}
+/* @keyframes slideLeft {
+  0% {
+    right: 0;
+    top: 0;
+  }
+  25% {
+    right: 931px;
+    top: 0;
+  }
+  50% {
+    right: 2197px;
+    top: 0;
+  }
+  75% {
+    right: 3463px;
+    top: 0;
+  }
+  100% {
+    right: 4394px;
+    top: 0;
+  }
+} */
 .atv-slide__img {
   position: absolute;
   top: 0;
@@ -755,6 +815,18 @@ header {
   position: absolute;
   bottom: 58px;
   left: 70px;
+  animation-name: slideUp;
+  animation-duration: 3s;
+  /* animation-iteration-count: infinite; */
+  opacity: 0;
+}
+@keyframes slideUp {
+  0% {
+    bottom: -58px;
+  }
+  100% {
+    bottom: 58px;
+  }
 }
 .atv-slide__text .btn {
   font-size: 17px;
@@ -765,6 +837,9 @@ header {
   color: rgba(0, 0, 0, 1);
   border-radius: 22px;
   border: none;
+}
+.atv-slide__text .btn:hover {
+  background-color: rgb(255 255 255);
 }
 .atv-slide__text .genre {
   font-size: 17px;
@@ -870,6 +945,18 @@ header {
   height: 236px;
   scroll-snap-align: center;
   position: relative;
+  animation-name: contentslide;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes contentslide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .acontent-slide__img {
   position: absolute;
