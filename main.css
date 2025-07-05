@@ -1378,6 +1378,7 @@ main.store {
 }
 /* Only at Apple */
 .onlyapple-container {
+  margin-bottom: 60px;
 }
 .onlyapple-cards-scroller {
   display: flex;
@@ -1394,26 +1395,106 @@ main.store {
   background-color: rgba(255, 255, 255, 1);
   flex-shrink: 0;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
 }
 .onlyapple-card__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  aspect-ratio: 48/50;
+  border-radius: 18px;
+  width: 100%;
+  height: 100%;
 }
-.onlyapple-card__title {
+.onlyapple-card__text {
+  font-weight: 700;
+  position: absolute;
 }
-.onlyapple-card__description {
+.o-card-t__description {
+  font-size: 26px;
+  line-height: 32px;
+}
+.o-card-t__title {
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(110, 110, 115, 1);
+  margin-bottom: 9px;
+}
+.get-gifts .onlyapple-card__text {
+  top: 50px;
+  left: 30px;
+}
+.trade-in .onlyapple-card__text,
+.specialist .onlyapple-card__text {
+  top: 31px;
+  left: 30px;
 }
 .onlyapple-card2nd {
+  width: 646px;
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  flex-shrink: 0;
 }
-.onlyapple-card2nd__inbox {
-  width: 313px;
+.onlyapple-card2nd__in-box {
+  width: calc(50% - 10px);
   height: 240px;
   border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   background-color: rgba(255, 255, 255, 1);
   flex-shrink: 0;
-  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   font-size: 22px;
   line-height: 28px;
   font-weight: 700;
+  box-sizing: border-box;
+}
+.onlyapple-card2nd__in-box--customize,
+.onlyapple-card2nd__in-box--free-returns {
+  padding: 82px 30px;
+}
+.onlyapple-card2nd__in-box--pay-full,
+.onlyapple-card2nd__in-box--engrave {
+  padding: 68px 30px;
+}
+/* The Apple Experience */
+.experience-container {
+}
+.experience-cards-scroller {
+  display: flex;
+  padding-left: 140px;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.experience-card {
+  width: 480px;
+  height: 500px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.experience-card__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  aspect-ratio: 48/50;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+.experience-card__text {
+}
+.e-card-t__title {
+}
+.e-card-t__description {
+}
+.e-card-t__addinfo {
 }
