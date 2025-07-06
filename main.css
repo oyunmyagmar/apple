@@ -1070,8 +1070,10 @@ header {
     margin: 16px;
   }
 }
-
-/* apple store page */ /* apple store page */ /* apple store page */
+/* apple store page */
+/* apple store page */
+/* apple store page */
+/* apple store page */
 main.store {
   background-color: rgba(245, 245, 247, 1);
   min-height: 100vh;
@@ -1153,10 +1155,8 @@ main.store {
   margin-left: 4px;
 }
 .store-question__text .content:hover {
-  text-decoration: underline;
-  text-decoration-style: solid;
+  text-decoration: underline solid;
   text-decoration-thickness: 0%;
-  text-decoration-skip-ink: auto;
 }
 .qbox1 {
   margin-bottom: 16px;
@@ -1206,6 +1206,7 @@ main.store {
   color: rgba(110, 110, 115, 1);
   margin-bottom: 24px;
   padding-left: 140px;
+  box-sizing: border-box;
 }
 .container-heading > span {
   background: linear-gradient(
@@ -1235,6 +1236,7 @@ main.store {
   flex-shrink: 0;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   position: relative;
+  box-sizing: border-box;
   transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
 }
 .latest-card:hover {
@@ -1264,14 +1266,15 @@ main.store {
 }
 .l-card-t__addinfo {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
   font-weight: 700;
   color: rgba(182, 68, 0, 1);
   margin-bottom: 9px;
 }
-.l-card-t__addinfo > sup {
+.l-card-t__addinfo > span {
   font-size: 8px;
   line-height: 10px;
+  vertical-align: top;
 }
 .l-card-t__name {
   font-size: 26px;
@@ -1304,6 +1307,7 @@ main.store {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
   position: relative;
+  box-sizing: border-box;
   transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
 }
 .personalization-card1st:hover {
@@ -1348,9 +1352,27 @@ main.store {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.16);
   transform: scale3d(1.01, 1.01, 1.01);
 }
-.personalization-card__img {
+.personalization-card__imgbox {
+  width: 230px;
+  height: 230px;
+  margin: 0 13.5px;
+  margin-bottom: 58px;
+  box-sizing: border-box;
+  position: relative;
+}
+.personalization-card__imgbox > img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
   aspect-ratio: 23/23;
-  padding: 0 13.5px;
+}
+.airpods-max .personalization-card__imgbox {
+  margin-bottom: 0;
 }
 .personalization-card__colorbox {
   display: flex;
@@ -1362,11 +1384,6 @@ main.store {
 }
 .personalization-card__colorbox .color {
   aspect-ratio: 12/12;
-}
-.airpods-pro2 .personalization-card__text,
-.airpods-4 .personalization-card__text,
-.pencil-pro .personalization-card__text {
-  margin-top: 58px;
 }
 .p-card-t__addinfo {
   font-size: 12px;
@@ -1386,7 +1403,7 @@ main.store {
 }
 .p-card-t__price {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 16px;
 }
 /* Holiday Picks */
 .holiday-container {
@@ -1399,6 +1416,7 @@ main.store {
   overflow-x: scroll;
   overflow-y: hidden;
   color: rgba(29, 29, 31, 1);
+  box-sizing: border-box;
 }
 .holiday-card1st {
   width: 400px;
@@ -1408,6 +1426,7 @@ main.store {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
   position: relative;
+  box-sizing: border-box;
   transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
 }
 .holiday-card1st:hover {
@@ -1452,9 +1471,23 @@ main.store {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.16);
   transform: scale3d(1.01, 1.01, 1.01);
 }
-.holiday-card__img {
+.holiday-card__imgbox {
+  width: 230px;
+  height: 230px;
+  margin: 0 13.5px;
+  box-sizing: border-box;
+  position: relative;
+}
+.holiday-card__imgbox > img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
   aspect-ratio: 23/23;
-  padding: 0 13.5px;
+  width: 100%;
+  height: 100%;
 }
 .holiday-card__colorbox {
   display: flex;
@@ -1494,7 +1527,7 @@ main.store {
 }
 .h-card-t__price {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 16px;
 }
 /* Only at Apple */
 .onlyapple-container {
@@ -1507,6 +1540,7 @@ main.store {
   overflow-x: scroll;
   overflow-y: hidden;
   color: rgba(29, 29, 31, 1);
+  box-sizing: border-box;
 }
 .onlyapple-card {
   width: 480px;
@@ -1516,6 +1550,7 @@ main.store {
   flex-shrink: 0;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   position: relative;
+  box-sizing: border-box;
   transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
 }
 .onlyapple-card:hover {
@@ -1529,6 +1564,7 @@ main.store {
   left: 0;
   right: 0;
   aspect-ratio: 48/50;
+  object-fit: cover;
   border-radius: 18px;
   width: 100%;
   height: 100%;
@@ -1536,22 +1572,22 @@ main.store {
 .onlyapple-card__text {
   font-weight: 700;
   position: absolute;
-  left: 30px;
   top: 50px;
-}
-.o-card-t__description {
-  font-size: 26px;
-  line-height: 32px;
-}
-.o-card-t__title {
-  font-size: 12px;
-  line-height: 16px;
-  color: rgba(110, 110, 115, 1);
-  margin-bottom: 9px;
+  left: 30px;
 }
 .trade-in .onlyapple-card__text,
 .specialist .onlyapple-card__text {
   top: 31px;
+}
+.o-card-t__title {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(110, 110, 115, 1);
+  margin-bottom: 9px;
+}
+.o-card-t__description {
+  font-size: 26px;
+  line-height: 32px;
 }
 .onlyapple-card2nd {
   width: 646px;
@@ -1571,15 +1607,21 @@ main.store {
   font-size: 22px;
   line-height: 28px;
   font-weight: 700;
+  padding: 0 30px;
   box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.onlyapple-card2nd__in-box:hover {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.16);
+  transform: scale3d(1.01, 1.01, 1.01);
 }
 .onlyapple-card2nd__in-box--customize,
 .onlyapple-card2nd__in-box--free-returns {
-  padding: 82px 30px;
+  padding-top: 82px;
 }
 .onlyapple-card2nd__in-box--pay-full,
 .onlyapple-card2nd__in-box--engrave {
-  padding: 68px 30px;
+  padding-top: 68px;
 }
 /* The Apple Experience */
 .experience-container {
@@ -1591,6 +1633,7 @@ main.store {
   gap: 20px;
   overflow-x: scroll;
   overflow-y: hidden;
+  box-sizing: border-box;
 }
 .experience-card {
   width: 480px;
@@ -1600,6 +1643,7 @@ main.store {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
   position: relative;
+  box-sizing: border-box;
   transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
 }
 .experience-card:hover {
@@ -1646,6 +1690,13 @@ main.store {
 .free-tv .e-card-t__description {
   color: rgba(255, 255, 255, 1);
 }
+.free-tv .e-card-t__description::after {
+  content: "++";
+  font-size: 16.8px;
+  line-height: 19.2px;
+  vertical-align: super;
+  margin-left: -5px;
+}
 .e-card-t__addinfo {
   font-size: 17px;
   line-height: 20px;
@@ -1661,6 +1712,7 @@ main.store {
   overflow-x: scroll;
   overflow-y: hidden;
   color: rgba(29, 29, 31, 1);
+  box-sizing: border-box;
 }
 .savings-card {
   width: 400px;
@@ -1670,6 +1722,7 @@ main.store {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
   position: relative;
+  box-sizing: border-box;
   transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
 }
 .savings-card:hover {
@@ -1728,8 +1781,13 @@ main.store {
   line-height: 32px;
   font-weight: 700;
   margin-bottom: 24px;
+  box-sizing: border-box;
 }
-.links__buttons a.btn {
+.links__buttons {
+  display: flex;
+  gap: 12px;
+}
+.links__buttons .btn {
   font-size: 14px;
   line-height: 20px;
   padding: 10px 12px;
@@ -1739,22 +1797,22 @@ main.store {
   text-decoration: none;
   background-color: transparent;
   color: rgba(29, 29, 31, 1);
-  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.links__buttons a.btn:hover {
-  background-color: rgba(29, 29, 31, 1);
-  color: rgba(255, 255, 255, 1);
-  text-decoration: underline;
-}
-
-.links__buttons a.btn::after {
+.links__buttons .btn::after {
   content: "";
   width: 8px;
   height: 8px;
-  background-image: url(images-store/links-vector.svg);
+  background-image: url(images-store/links-vector-black.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  display: inline-block;
-  margin-left: 8px;
+  display: block;
+}
+.links__buttons .btn:hover {
+  background-color: rgb(39 39 41);
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
 }
