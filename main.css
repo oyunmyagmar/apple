@@ -103,7 +103,7 @@ header {
     padding: 16px 162px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   /* banner */
   .banner__text {
     padding: 6.5px 31px;
@@ -182,7 +182,7 @@ header {
     margin-bottom: 16px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   /* iPhone 16 Pro */
   .iphone16pro {
     background-image: url(images/iphone16pro.mob.png);
@@ -281,7 +281,7 @@ header {
     margin-bottom: 16px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   /* iPhone 16 */
   .iphone16 {
     background-image: url(images/iphone16.mob.png);
@@ -642,7 +642,7 @@ header {
     margin-top: 367px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   /* Apple Products */
   .a-products {
     padding: 0;
@@ -859,7 +859,7 @@ header {
     width: 401px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   /* a-tv scroll */
   .atv-slide {
     width: 274px;
@@ -1058,7 +1058,7 @@ header {
     margin-right: 18px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   /* a-content scroll */
   .acontent-slides {
     width: 1502px;
