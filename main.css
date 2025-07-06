@@ -740,36 +740,7 @@ header {
   flex-shrink: 0;
   scroll-snap-align: center;
   position: relative;
-  /* animation-name: slideLeft;
-  animation-duration: 12s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; */
 }
-/* .atv-slide:hover > .atv-slide__text {
-  opacity: 1;
-} */
-/* @keyframes slideLeft {
-  0% {
-    right: 0;
-    top: 0;
-  }
-  25% {
-    right: 931px;
-    top: 0;
-  }
-  50% {
-    right: 2197px;
-    top: 0;
-  }
-  75% {
-    right: 3463px;
-    top: 0;
-  }
-  100% {
-    right: 4394px;
-    top: 0;
-  }
-} */
 .atv-slide__img {
   position: absolute;
   top: 0;
@@ -808,19 +779,21 @@ header {
   position: absolute;
   bottom: 58px;
   left: 70px;
-  /* animation-name: slideUp;
+  animation-name: tvslideup;
   animation-duration: 3s;
-  animation-iteration-count: infinite;
-  opacity: 0; */
+  animation-fill-mode: forwards;
+  transition: all 0.6s;
+  opacity: 0;
 }
-/* @keyframes slideUp {
+@keyframes tvslideup {
   0% {
     bottom: -58px;
   }
   100% {
     bottom: 58px;
   }
-} */
+}
+
 .atv-slide__text .btn {
   font-size: 17px;
   line-height: 20px;
@@ -842,6 +815,9 @@ header {
 }
 .atv-slide__text .genre span {
   font-weight: 700;
+}
+.atv-slide:hover .atv-slide__text {
+  opacity: 1;
 }
 .atv-scroller + .dots-wrapper {
   display: flex;
@@ -938,19 +914,19 @@ header {
   height: 236px;
   scroll-snap-align: center;
   position: relative;
-  /* animation-name: contentslide;
-  animation-duration: 20s;
+  animation-name: contentslidein;
+  animation-duration: 19s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
 }
-/* @keyframes contentslide {
+@keyframes contentslidein {
   0% {
-    transform: translateX(0);
+    transform: translateX(0px);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-1100px);
   }
-} */
+}
 .acontent-slide__img {
   position: absolute;
   top: 0;
@@ -997,6 +973,38 @@ header {
   padding: 109px 0;
   padding-left: 226px;
 }
+.acontent-slide__shade {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.acontent-slide:hover .acontent-slide__shade {
+  opacity: 1;
+}
+.acontent-slide__shade-btn {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 16px;
+  background-color: rgb(245 245 247);
+  color: rgb(0 0 0);
+  border: none;
+  border-radius: 20px;
+  position: absolute;
+  top: 100.1px;
+  left: 165.11px;
+  opacity: 0;
+  transition: opacity 300ms;
+  z-index: 1;
+}
+.acontent-slide__shade-btn {
+  background-color: rgb(255 255 255);
+}
+.acontent-slide:hover .acontent-slide__shade-btn {
+  opacity: 1;
+}
 .acontent-button {
   width: 24px;
   height: 24px;
@@ -1041,6 +1049,9 @@ header {
     color: rgba(29, 29, 31, 1);
     width: 100%;
     bottom: -33px;
+  }
+  .acontent-slide:hover .acontent-slide__shade-btn {
+    opacity: 0;
   }
   .acontent-button {
     margin-bottom: 28px;
@@ -1374,7 +1385,7 @@ main.store {
 .airpods-max .personalization-card__imgbox {
   margin-bottom: 0;
 }
-.personalization-card__colorbox {
+.personalization-card__colorsbox {
   display: flex;
   gap: 7px;
   justify-content: center;
@@ -1382,8 +1393,22 @@ main.store {
   padding-bottom: 21px;
   box-sizing: border-box;
 }
-.personalization-card__colorbox .color {
-  aspect-ratio: 12/12;
+.personalization-card__colorsbox > .color-box {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  position: relative;
+}
+.personalization-card__colorsbox > .color-box > img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
 }
 .p-card-t__addinfo {
   font-size: 12px;
